@@ -1,5 +1,0 @@
-# Cloudflare Pages Configuration
-# This is a static site - no build needed
-
-[build]
-publish = "."
