@@ -1,0 +1,6 @@
+name = "dwajn"
+compatibility_date = "2024-12-05"
+
+[[kv_namespaces]]
+binding = "POULTRY_DATA"
+id = "82529e7cbc5347f9b5d7ea407f26dba9"
