@@ -8,7 +8,7 @@ export async function onRequestGet(context) {
   };
 
   try {
-    const data = await context.env.POULTRY_DATA.get('full-data', { type: 'json' });
+    const data = await context.env.POULTRY_DATA.get('poultry-data', { type: 'json' });
     
     if (!data) {
       // Return default empty data
@@ -42,7 +42,7 @@ export async function onRequestPost(context) {
     data.lastUpdate = new Date().toISOString();
     
     // Save to KV
-    await context.env.POULTRY_DATA.put('full-data', JSON.stringify(data));
+    await context.env.POULTRY_DATA.put('poultry-data', JSON.stringify(data));
     
     // Create backup
     const backupKey = `backup-${Date.now()}`;

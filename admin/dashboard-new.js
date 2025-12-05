@@ -25,15 +25,31 @@ function logout() {
     window.location.href = 'login.html';
 }
 
-// Load data from JSON file
+// Load data from Cloudflare KV or local JSON
 async function loadFullData() {
     try {
+        // Try loading from Cloudflare KV first
+        const response = await fetch('/api/data');
+        if (response.ok) {
+            fullData = await response.json();
+            console.log('✅ Data loaded from Cloudflare KV');
+            updateDashboard();
+            renderAllTables();
+            return;
+        }
+    } catch (error) {
+        console.log('Cloudflare KV not available, trying local file...');
+    }
+    
+    try {
+        // Fallback to local JSON file
         const response = await fetch('./full-data.json');
         fullData = await response.json();
+        console.log('✅ Data loaded from local JSON');
         updateDashboard();
         renderAllTables();
     } catch (error) {
-        // Fallback: Load embedded data if fetch fails
+        // Last fallback: Load embedded data
         console.log('Loading embedded data as fallback');
         fullData = getEmbeddedData();
         updateDashboard();
@@ -703,9 +719,9 @@ async function saveAllChanges() {
     try {
         fullData.lastUpdate = new Date().toISOString();
         
-        // Save to server via PHP
+        // Save to Cloudflare KV via API
         try {
-            const response = await fetch('./save-data.php', {
+            const response = await fetch('/api/data', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -734,8 +750,8 @@ async function saveAllChanges() {
                 throw new Error(result.message || 'فشل الحفظ');
             }
         } catch (serverError) {
-            console.error('Server save failed:', serverError);
-            showAlert('❌ فشل حفظ البيانات: ' + serverError.message, 'error');
+            console.error('Cloudflare KV save failed:', serverError);
+            showAlert('❌ فشل حفظ البيانات على Cloudflare: ' + serverError.message, 'error');
         }
         
         // Fallback: Download JSON file

@@ -1,8 +1,14 @@
 # Cloudflare
 .wrangler/
+.dev.vars
+
+# Node
+node_modules/
+npm-debug.log*
 
 # Backups
 *.backup
+*.bak
 backups/
 
 # OS
@@ -19,3 +25,8 @@ Thumbs.db
 # Temp
 *.tmp
 *.temp
+*~
+
+# Environment
+.env
+.env.local
