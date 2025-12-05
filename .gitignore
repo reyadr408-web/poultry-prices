@@ -1,6 +1,5 @@
 # Cloudflare
 .wrangler/
-wrangler.toml
 
 # Backups
 *.backup

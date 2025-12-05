@@ -1,0 +1,4 @@
+name = "poultry-prices"
+compatibility_date = "2024-12-05"
+
+# This is a Pages project - no pages_build_output_dir needed
