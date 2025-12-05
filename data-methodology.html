@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منهجية البيانات - بورصة الدواجن الرئيسية</title>
+    <meta name="description" content="تعرف على منهجية جمع البيانات وتحديث الأسعار في بورصة الدواجن">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .page-header {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        .content-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .content-section h2 {
+            color: #10b981;
+            font-size: 28px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #10b981;
+        }
+        .content-section h3 {
+            color: #059669;
+            font-size: 22px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        .content-section p {
+            line-height: 2;
+            font-size: 18px;
+            color: #374151;
+            margin-bottom: 15px;
+        }
+        .process-steps {
+            list-style: none;
+            padding: 0;
+        }
+        .process-steps li {
+            position: relative;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+            border-radius: 10px;
+            border-right: 4px solid #10b981;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+            border-right: 4px solid #3b82f6;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .highlight-box h4 {
+            color: #1e40af;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .back-btn {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 30px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background: #059669;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <div class="header-content">
+            <a href="index.html" style="text-decoration: none; color: white;">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <img src="logo.png" alt="لوجو داجن" style="width: 90px; height: 90px; object-fit: contain;">
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <span style="color: #fbbf24; font-weight: 700; font-size: 24px;">موقع دواجن</span>
+                        <h1 class="app-title" style="margin: 0;">بورصة الدواجن الرئيسية</h1>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <!-- Quick Navigation Menu -->
+    <nav class="quick-nav">
+        <div class="nav-container">
+            <a href="poultry.html" class="nav-item">
+                <span class="nav-icon">🐔</span>
+                <span class="nav-label">أسعار الفراخ</span>
+            </a>
+            <a href="chicks.html" class="nav-item">
+                <span class="nav-icon">🐤</span>
+                <span class="nav-label">أسعار الكتاكيت</span>
+            </a>
+            <a href="eggs.html" class="nav-item">
+                <span class="nav-icon">🥚</span>
+                <span class="nav-label">أسعار البيض</span>
+            </a>
+            <a href="feed.html" class="nav-item">
+                <span class="nav-icon">🌾</span>
+                <span class="nav-label">أسعار العلف</span>
+            </a>
+            <a href="materials.html" class="nav-item">
+                <span class="nav-icon">📦</span>
+                <span class="nav-label">الخامات</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Date Bar -->
+    <div class="date-bar">
+        <span class="calendar-icon">📅</span>
+        <span class="date-text" id="currentDate"></span>
+        <span class="last-update">: آخر تحديث</span>
+    </div>
+
+    <div class="page-container">
+        <div class="page-header">
+            <h1>📊 منهجية البيانات</h1>
+            <p>كيف نجمع ونحدث أسعار الدواجن بدقة وموثوقية</p>
+        </div>
+
+        <div class="content-section">
+            <h2>منهجية جمع البيانات</h2>
+            <p>
+                نلتزم في <strong>بورصة الدواجن الرئيسية</strong> بتوفير أسعار دقيقة وموثوقة من خلال منهجية علمية ومنظمة لجمع البيانات وتحديثها. نحن نعتمد على مصادر متعددة ونتحقق من صحة البيانات قبل نشرها.
+            </p>
+
+            <h3>خطوات جمع البيانات</h3>
+            <ul class="process-steps">
+                <li>
+                    <strong>جمع البيانات من مصادر متعددة</strong><br>
+                    نقوم بجمع الأسعار من التجار، المربين، شركات الإنتاج، والأسواق الرئيسية في جميع أنحاء مصر لضمان تمثيل شامل للسوق.
+                </li>
+                <li>
+                    <strong>التحقق والمقارنة</strong><br>
+                    نقارن البيانات من مصادر مختلفة للتأكد من دقتها واتساقها، ونستبعد أي قراءات شاذة أو غير منطقية.
+                </li>
+                <li>
+                    <strong>حساب المتوسط المرجح</strong><br>
+                    نستخدم المتوسط المرجح بناءً على حجم التداول وأهمية المصدر للوصول إلى السعر الأكثر تمثيلاً للسوق.
+                </li>
+                <li>
+                    <strong>المراجعة النهائية</strong><br>
+                    يقوم فريقنا بمراجعة البيانات النهائية للتأكد من منطقيتها ومطابقتها لحركة السوق قبل النشر.
+                </li>
+                <li>
+                    <strong>التحديث والنشر</strong><br>
+                    يتم نشر الأسعار المحدثة على الموقع والتطبيق وإرسال إشعارات فورية للمستخدمين.
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>مصادر البيانات</h2>
+            
+            <h3>🏪 الأسواق الرئيسية</h3>
+            <p>نتعامل مع الأسواق الرئيسية للدواجن في القاهرة والإسكندرية والدلتا والصعيد للحصول على صورة شاملة لحركة الأسعار.</p>
+
+            <h3>🏢 الشركات المنتجة</h3>
+            <p>نحصل على الأسعار الرسمية المعلنة من كبرى شركات إنتاج الدواجن والكتاكيت والأعلاف في مصر.</p>
+
+            <h3>👥 التجار والمربين</h3>
+            <p>نتواصل مع شبكة واسعة من التجار والمربين في مختلف المحافظات لمعرفة أسعار التنفيذ الفعلية.</p>
+
+            <h3>📱 التطبيق والموقع</h3>
+            <p>نستقبل تقارير الأسعار من مستخدمي التطبيق والموقع كمصدر إضافي للتحقق من دقة البيانات.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>توقيت التحديثات</h2>
+            
+            <div class="highlight-box">
+                <h4>⏰ التحديث اليومي</h4>
+                <p>يتم تحديث أسعار الدواجن والبيض يومياً في الساعات التالية:</p>
+                <p>🔹 <strong>التحديث الصباحي:</strong> 9:00 - 10:00 صباحاً<br>
+                   🔹 <strong>التحديث المسائي:</strong> 4:00 - 5:00 مساءً</p>
+            </div>
+
+            <h3>📅 أيام العمل</h3>
+            <p>نقوم بتحديث الأسعار من السبت إلى الخميس. في أيام الجمعة والعطلات الرسمية، يتم عرض آخر أسعار محدثة مع الإشارة إلى تاريخ التحديث.</p>
+
+            <h3>⚡ التحديثات العاجلة</h3>
+            <p>في حالة حدوث تغييرات كبيرة في الأسعار خلال اليوم، نقوم بإصدار تحديثات عاجلة وإرسال إشعارات فورية لمستخدمي التطبيق.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>معايير الجودة</h2>
+            
+            <h3>✅ الدقة</h3>
+            <p>نلتزم بنسبة دقة لا تقل عن 95% في الأسعار المنشورة من خلال التحقق المتعدد المصادر.</p>
+
+            <h3>✅ الشفافية</h3>
+            <p>نوضح دائماً مصادر البيانات وتوقيت آخر تحديث لضمان الشفافية الكاملة مع مستخدمينا.</p>
+
+            <h3>✅ التحديث المنتظم</h3>
+            <p>نلتزم بجدول زمني ثابت للتحديثات لضمان حصول المستخدمين على معلومات حديثة باستمرار.</p>
+
+            <h3>✅ الموضوعية</h3>
+            <p>نحافظ على الحياد التام ولا نتأثر بمصالح أي جهة في عرض الأسعار.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>ملاحظات مهمة</h2>
+            
+            <div class="highlight-box">
+                <h4>⚠️ تنويه</h4>
+                <p>الأسعار المعروضة هي أسعار استرشادية تعكس متوسط السوق وقد تختلف قليلاً حسب المنطقة والكمية وطريقة الدفع. ننصح دائماً بالتحقق من السعر النهائي مع البائع قبل إتمام الصفقة.</p>
+            </div>
+
+            <p>🔹 الأسعار المعلنة: هي الأسعار التي تعلنها الشركات رسمياً</p>
+            <p>🔹 أسعار التنفيذ: هي الأسعار الفعلية التي تتم بها المعاملات في السوق</p>
+            <p>🔹 الفرق بين السعرين يعكس حركة العرض والطلب في السوق</p>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="back-btn">← العودة للصفحة الرئيسية</a>
+        </div>
+    </div>
+
+    <footer style="padding: 40px 20px; background: linear-gradient(135deg, #1f2937, #374151); color: white; text-align: center; margin-top: 40px;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <!-- SEO Content - Hidden visually but readable by search engines -->
+            <div style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
+                <h2>بورصة الدواجن الرئيسية - بورصة الدواجن الرسمية</h2>
+                <p>
+                    <strong>بورصة الدواجن الرئيسية</strong> هي المصدر الأول والأكثر موثوقية لمتابعة <strong>اسعار الفراخ</strong> اليوم في مصر. 
+                    نوفر لكم <strong>بورصة الدواجن الرسمية</strong> المحدثة يومياً لجميع أنواع الدواجن بما في ذلك الفراخ البيضاء، الساسو، الرومي الأبيض والأسود.
+                </p>
+                <p>
+                    تابع معنا <strong>بورصة الفراخ</strong> و<strong>اسعار الدواجن</strong> المعلن والتنفيذ لحظة بلحظة. 
+                    كما نقدم <strong>بورصة البيض الرئيسية</strong> لمتابعة اسعار البيض الأبيض والأحمر والبلدي، بالإضافة إلى اسعار الكتاكيت والخامات الزراعية.
+                </p>
+                <p>
+                    <strong>بورصة الدواجن</strong> تقدم معلومات دقيقة وموثوقة لمساعدة التجار والمربين على اتخاذ قرارات مستنيرة في سوق الدواجن المصري.
+                </p>
+            </div>
+            
+            <div style="border-top: 1px solid #4b5563; padding-top: 20px; margin-top: 20px;">
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 20px;">
+                    <a href="about.html" style="color: #10b981; text-decoration: none; font-size: 14px;">عن الموقع</a>
+                    <a href="contact.html" style="color: #10b981; text-decoration: none; font-size: 14px;">اتصل بنا</a>
+                    <a href="data-methodology.html" style="color: #10b981; text-decoration: none; font-size: 14px;">منهجية البيانات</a>
+                    <a href="data-quality.html" style="color: #10b981; text-decoration: none; font-size: 14px;">جودة البيانات</a>
+                    <a href="terms.html" style="color: #10b981; text-decoration: none; font-size: 14px;">شروط الاستخدام</a>
+                    <a href="privacy.html" style="color: #10b981; text-decoration: none; font-size: 14px;">سياسة الخصوصية</a>
+                </div>
+                <p style="margin: 10px 0; font-size: 14px; color: #9ca3af;">© 2025 بورصة الدواجن الرئيسية - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Display current date
+        const dateElement = document.getElementById('currentDate');
+        if (dateElement) {
+            const today = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            dateElement.textContent = today.toLocaleDateString('ar-EG', options);
+        }
+    </script>
+</body>
+</html>

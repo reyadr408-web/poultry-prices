@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - بورصة الدواجن</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: rgba(255,255,255,0.9);
+            font-size: 16px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card h3 {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .stat-card .number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #10b981;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: white;
+            color: #374151;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .tab-btn:hover {
+            background: #f3f4f6;
+        }
+
+        .tab-btn.active {
+            background: #10b981;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #1f2937;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #10b981;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: right;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        th {
+            background: #f9fafb;
+            color: #374151;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: #f9fafb;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+            margin: 0 3px;
+        }
+
+        .btn-edit {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .btn-edit:hover {
+            background: #2563eb;
+        }
+
+        .btn-delete {
+            background: #ef4444;
+            color: white;
+        }
+
+        .btn-delete:hover {
+            background: #dc2626;
+        }
+
+        .btn-up {
+            background: #10b981;
+            color: white;
+        }
+
+        .btn-down {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .btn-primary {
+            background: #10b981;
+            color: white;
+            padding: 12px 30px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            background: #059669;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #374151;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #10b981;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-header h2 {
+            color: #1f2937;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: #6b7280;
+        }
+
+        .alert {
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-success {
+            background: #d1fae5;
+            color: #065f46;
+            border-right: 4px solid #10b981;
+        }
+
+        .alert-error {
+            background: #fee2e2;
+            color: #991b1b;
+            border-right: 4px solid #ef4444;
+        }
+
+        .company-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+        .icon-preview {
+            font-size: 30px;
+        }
+
+        .save-all-btn {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #10b981;
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.5);
+            transition: all 0.3s;
+            z-index: 999;
+        }
+
+        .save-all-btn:hover {
+            background: #059669;
+            transform: scale(1.05);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h1>🎛️ لوحة تحكم بورصة الدواجن</h1>
+                    <p>إدارة كاملة للأسعار والشركات والمحتوى</p>
+                </div>
+                <button onclick="logout()" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold;">
+                    🚪 تسجيل الخروج
+                </button>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <h3>إجمالي المنتجات</h3>
+                <div class="number" id="totalProducts">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>شركات الكتاكيت</h3>
+                <div class="number" id="totalChickCompanies">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>شركات العلف</h3>
+                <div class="number" id="totalFeedCompanies">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>آخر تحديث</h3>
+                <div class="number" style="font-size: 18px;" id="lastUpdate">-</div>
+            </div>
+        </div>
+
+        <div id="alertContainer"></div>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('poultry')">🐔 أسعار الفراخ</button>
+            <button class="tab-btn" onclick="switchTab('chicks')">🐤 أسعار الكتاكيت</button>
+            <button class="tab-btn" onclick="switchTab('eggs')">🥚 أسعار البيض</button>
+            <button class="tab-btn" onclick="switchTab('feed')">🌾 أسعار العلف</button>
+            <button class="tab-btn" onclick="switchTab('materials')">📦 الخامات</button>
+        </div>
+
+        <!-- Poultry Tab -->
+        <div id="poultry-tab" class="tab-content active">
+            <h2 class="section-title">إدارة أسعار الفراخ والدواجن</h2>
+            <button class="btn btn-primary" onclick="openAddModal('poultry')">+ إضافة منتج جديد</button>
+            <div class="table-container">
+                <table id="poultry-table">
+                    <thead>
+                        <tr>
+                            <th>الترتيب</th>
+                            <th>الأيقونة</th>
+                            <th>النوع</th>
+                            <th>السعر المعلن</th>
+                            <th>سعر التنفيذ</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Chicks Tab -->
+        <div id="chicks-tab" class="tab-content">
+            <h2 class="section-title">إدارة أسعار الكتاكيت والشركات</h2>
+            <button class="btn btn-primary" onclick="openAddModal('chicks')">+ إضافة شركة جديدة</button>
+            <div class="table-container">
+                <table id="chicks-table">
+                    <thead>
+                        <tr>
+                            <th>الترتيب</th>
+                            <th>الشركة</th>
+                            <th>السعر</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Eggs Tab -->
+        <div id="eggs-tab" class="tab-content">
+            <h2 class="section-title">إدارة أسعار البيض</h2>
+            <button class="btn btn-primary" onclick="openAddModal('eggs')">+ إضافة نوع جديد</button>
+            <div class="table-container">
+                <table id="eggs-table">
+                    <thead>
+                        <tr>
+                            <th>الترتيب</th>
+                            <th>النوع</th>
+                            <th>السعر</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Feed Tab -->
+        <div id="feed-tab" class="tab-content">
+            <h2 class="section-title">إدارة أسعار العلف والشركات</h2>
+            <button class="btn btn-primary" onclick="openAddModal('feed')">+ إضافة منتج جديد</button>
+            <div class="table-container">
+                <table id="feed-table">
+                    <thead>
+                        <tr>
+                            <th>الترتيب</th>
+                            <th>اسم العلف</th>
+                            <th>السعر</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Materials Tab -->
+        <div id="materials-tab" class="tab-content">
+            <h2 class="section-title">إدارة أسعار الخامات</h2>
+            <button class="btn btn-primary" onclick="openAddModal('materials')">+ إضافة خامة جديدة</button>
+            <div class="table-container">
+                <table id="materials-table">
+                    <thead>
+                        <tr>
+                            <th>الترتيب</th>
+                            <th>الأيقونة</th>
+                            <th>الخامة</th>
+                            <th>السعر</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>تعديل البيانات</h2>
+                <button class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+            <div id="modalForm"></div>
+        </div>
+    </div>
+
+    <button class="save-all-btn" onclick="saveAllChanges()">💾 حفظ جميع التغييرات</button>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

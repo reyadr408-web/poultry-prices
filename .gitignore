@@ -1,0 +1,22 @@
+# Cloudflare
+.wrangler/
+wrangler.toml
+
+# Backups
+*.backup
+backups/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+.idea/
+
+# Temp
+*.tmp
+*.temp

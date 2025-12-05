@@ -1,0 +1,16 @@
+# حماية مجلد لوحة التحكم
+
+# Redirect to login page if not logged in
+<Files "index.html">
+    # Allow access
+</Files>
+
+# Protect dashboard files
+<FilesMatch "\.(js|json)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Enable error pages
+ErrorDocument 403 /admin/login.html
+ErrorDocument 404 /admin/login.html

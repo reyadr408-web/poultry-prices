@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم الكاملة - بورصة الدواجن</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-content h1 {
+            color: white;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header-content p {
+            color: rgba(255,255,255,0.9);
+            font-size: 16px;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-save-all {
+            background: white;
+            color: #059669;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-save-all:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+        }
+
+        .btn-logout {
+            background: rgba(239, 68, 68, 0.9);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-logout:hover {
+            background: #dc2626;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card h3 {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .stat-card .number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #10b981;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: white;
+            color: #374151;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tab-btn:hover {
+            background: #f3f4f6;
+        }
+
+        .tab-btn.active {
+            background: #10b981;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .form-section {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .form-section h3 {
+            color: #374151;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            color: #6b7280;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .form-group input {
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #10b981;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn-primary {
+            background: #10b981;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #059669;
+        }
+
+        .btn-secondary {
+            background: #6b7280;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background: #4b5563;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        thead {
+            background: #f9fafb;
+        }
+
+        th {
+            padding: 15px;
+            text-align: right;
+            font-weight: 600;
+            color: #374151;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        tbody tr:hover {
+            background: #f9fafb;
+        }
+
+        .btn-edit {
+            background: #3b82f6;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+            transition: all 0.2s;
+        }
+
+        .btn-edit:hover {
+            background: #2563eb;
+        }
+
+        .btn-delete {
+            background: #ef4444;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-delete:hover {
+            background: #dc2626;
+        }
+
+        .btn-move {
+            background: #8b5cf6;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 3px;
+            transition: all 0.2s;
+            font-size: 14px;
+        }
+
+        .btn-move:hover {
+            background: #7c3aed;
+        }
+
+        .btn-move:disabled {
+            background: #d1d5db;
+            cursor: not-allowed;
+        }
+
+        .logo-preview {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
+        .help-text {
+            color: #6b7280;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideOut {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-content">
+                <h1>🎯 لوحة التحكم الكاملة</h1>
+                <p>إدارة شاملة لجميع بيانات الموقع - الأسعار، الشركات، اللوجوهات والمزيد</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn-save-all" onclick="saveAllChanges()">💾 حفظ جميع التغييرات</button>
+                <button class="btn-logout" onclick="logout()">🚪 تسجيل الخروج</button>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <h3>إجمالي المنتجات</h3>
+                <div class="number" id="totalProducts">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>شركات الكتاكيت</h3>
+                <div class="number" id="totalChickCompanies">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>شركات العلف</h3>
+                <div class="number" id="totalFeedCompanies">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>آخر تحديث</h3>
+                <div class="number" style="font-size: 18px;" id="lastUpdate">-</div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('poultry')">🐔 الدواجن</button>
+            <button class="tab-btn" onclick="showTab('chicks')">🐤 الكتاكيت</button>
+            <button class="tab-btn" onclick="showTab('feed')">🌾 العلف</button>
+            <button class="tab-btn" onclick="showTab('eggs')">🥚 البيض</button>
+            <button class="tab-btn" onclick="showTab('materials')">📦 المواد الخام</button>
+        </div>
+
+        <!-- Poultry Tab -->
+        <div id="poultryTab" class="tab-content active">
+            <div class="form-section">
+                <h3>إضافة / تعديل منتج دواجن</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>اسم المنتج</label>
+                        <input type="text" id="poultryName" placeholder="مثال: فراخ بيضاء">
+                    </div>
+                    <div class="form-group">
+                        <label>الأيقونة (Emoji أو صورة)</label>
+                        <input type="text" id="poultryIcon" placeholder="مثال: 🐔 أو poultry-icon.png">
+                        <input type="file" id="poultryIconFile" accept="image/*" style="margin-top: 8px;" onchange="handleIconUpload(this, 'poultryIcon')">
+                        <span class="help-text">أدخل Emoji أو ارفع صورة</span>
+                    </div>
+                    <div class="form-group">
+                        <label>السعر المعلن (جنيه)</label>
+                        <input type="text" id="poultryPriceAnnounced" placeholder="مثال: 60">
+                    </div>
+                    <div class="form-group">
+                        <label>سعر التنفيذ (جنيه)</label>
+                        <input type="text" id="poultryPriceExecution" placeholder="مثال: 58">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-primary" id="addPoultryBtn" onclick="addPoultry()">➕ إضافة منتج</button>
+                    <button class="btn-primary" id="updatePoultryBtn" style="display:none;" onclick="updatePoultry()">✅ تحديث المنتج</button>
+                    <button class="btn-secondary" onclick="cancelEdit(); clearPoultryInputs()">❌ إلغاء</button>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>الأيقونة</th>
+                        <th>اسم المنتج</th>
+                        <th>السعر المعلن</th>
+                        <th>سعر التنفيذ</th>
+                        <th>الترتيب</th>
+                        <th>الإجراءات</th>
+                    </tr>
+                </thead>
+                <tbody id="poultryTableBody"></tbody>
+            </table>
+        </div>
+
+        <!-- Chicks Tab -->
+        <div id="chicksTab" class="tab-content">
+            <div class="form-section">
+                <h3>إضافة / تعديل شركة كتاكيت</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>اسم الشركة</label>
+                        <input type="text" id="chicksName" placeholder="مثال: الوادي">
+                    </div>
+                    <div class="form-group">
+                        <label>لوجو الشركة</label>
+                        <input type="text" id="chicksLogo" placeholder="مثال: wadi-chicks-logo.png">
+                        <input type="file" id="chicksLogoFile" accept="image/*" style="margin-top: 8px;" onchange="handleLogoUpload(this, 'chicksLogo')">
+                        <span class="help-text">ارفع صورة اللوجو أو اكتب اسم الملف</span>
+                    </div>
+                    <div class="form-group">
+                        <label>السعر (جنيه)</label>
+                        <input type="text" id="chicksPrice" placeholder="مثال: 12.5">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-primary" id="addChicksBtn" onclick="addChicks()">➕ إضافة شركة</button>
+                    <button class="btn-primary" id="updateChicksBtn" style="display:none;" onclick="updateChicks()">✅ تحديث الشركة</button>
+                    <button class="btn-secondary" onclick="cancelEdit(); clearChicksInputs()">❌ إلغاء</button>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>اللوجو</th>
+                        <th>اسم الشركة</th>
+                        <th>السعر</th>
+                        <th>الترتيب</th>
+                        <th>الإجراءات</th>
+                    </tr>
+                </thead>
+                <tbody id="chicksTableBody"></tbody>
+            </table>
+        </div>
+
+        <!-- Feed Tab -->
+        <div id="feedTab" class="tab-content">
+            <div class="form-section">
+                <h3>إضافة / تعديل شركة علف</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>اسم الشركة</label>
+                        <input type="text" id="feedName" placeholder="مثال: نيو هوب">
+                    </div>
+                    <div class="form-group">
+                        <label>لوجو الشركة</label>
+                        <input type="text" id="feedLogo" placeholder="مثال: newhope-logo.png">
+                        <input type="file" id="feedLogoFile" accept="image/*" style="margin-top: 8px;" onchange="handleLogoUpload(this, 'feedLogo')">
+                        <span class="help-text">ارفع صورة اللوجو أو اكتب اسم الملف</span>
+                    </div>
+                    <div class="form-group">
+                        <label>سعر بادي 23% (جنيه)</label>
+                        <input type="text" id="feedBady23" placeholder="مثال: 16800">
+                    </div>
+                    <div class="form-group">
+                        <label>سعر نامي 21% (جنيه)</label>
+                        <input type="text" id="feedNamy21" placeholder="مثال: 15500">
+                    </div>
+                    <div class="form-group">
+                        <label>سعر ناهي 19% (جنيه)</label>
+                        <input type="text" id="feedNahy19" placeholder="مثال: 14800">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-primary" id="addFeedBtn" onclick="addFeed()">➕ إضافة شركة</button>
+                    <button class="btn-primary" id="updateFeedBtn" style="display:none;" onclick="updateFeed()">✅ تحديث الشركة</button>
+                    <button class="btn-secondary" onclick="cancelEdit(); clearFeedInputs()">❌ إلغاء</button>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>اللوجو</th>
+                        <th>اسم الشركة</th>
+                        <th>بادي 23%</th>
+                        <th>نامي 21%</th>
+                        <th>ناهي 19%</th>
+                        <th>الترتيب</th>
+                        <th>الإجراءات</th>
+                    </tr>
+                </thead>
+                <tbody id="feedTableBody"></tbody>
+            </table>
+        </div>
+
+        <!-- Eggs Tab -->
+        <div id="eggsTab" class="tab-content">
+            <div class="form-section">
+                <h3>إضافة / تعديل نوع بيض</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>نوع البيض</label>
+                        <input type="text" id="eggsName" placeholder="مثال: بيض أبيض">
+                    </div>
+                    <div class="form-group">
+                        <label>السعر (جنيه)</label>
+                        <input type="text" id="eggsPrice" placeholder="مثال: 45">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-primary" id="addEggsBtn" onclick="addEggs()">➕ إضافة نوع</button>
+                    <button class="btn-primary" id="updateEggsBtn" style="display:none;" onclick="updateEggs()">✅ تحديث النوع</button>
+                    <button class="btn-secondary" onclick="cancelEdit(); clearEggsInputs()">❌ إلغاء</button>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>نوع البيض</th>
+                        <th>السعر</th>
+                        <th>الترتيب</th>
+                        <th>الإجراءات</th>
+                    </tr>
+                </thead>
+                <tbody id="eggsTableBody"></tbody>
+            </table>
+        </div>
+
+        <!-- Materials Tab -->
+        <div id="materialsTab" class="tab-content">
+            <div class="form-section">
+                <h3>إضافة / تعديل مادة خام</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>اسم المادة</label>
+                        <input type="text" id="materialsName" placeholder="مثال: ذرة صفراء">
+                    </div>
+                    <div class="form-group">
+                        <label>الأيقونة (Emoji أو صورة)</label>
+                        <input type="text" id="materialsIcon" placeholder="مثال: 🌽 أو material-icon.png">
+                        <input type="file" id="materialsIconFile" accept="image/*" style="margin-top: 8px;" onchange="handleIconUpload(this, 'materialsIcon')">
+                        <span class="help-text">أدخل Emoji أو ارفع صورة</span>
+                    </div>
+                    <div class="form-group">
+                        <label>السعر (جنيه)</label>
+                        <input type="text" id="materialsPrice" placeholder="مثال: 14,500">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-primary" id="addMaterialsBtn" onclick="addMaterials()">➕ إضافة مادة</button>
+                    <button class="btn-primary" id="updateMaterialsBtn" style="display:none;" onclick="updateMaterials()">✅ تحديث المادة</button>
+                    <button class="btn-secondary" onclick="cancelEdit(); clearMaterialsInputs()">❌ إلغاء</button>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>الأيقونة</th>
+                        <th>اسم المادة</th>
+                        <th>السعر</th>
+                        <th>الترتيب</th>
+                        <th>الإجراءات</th>
+                    </tr>
+                </thead>
+                <tbody id="materialsTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="dashboard-new.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- ⚠️ تنبيه: قم بتغيير dwajn.net إلى الدومين الخاص بك عند رفع الموقع -->
+  
+  <!-- الصفحة الرئيسية - بورصة الدواجن الرئيسية -->
+  <url>
+    <loc>https://dwajn.net/index.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-05</news:publication_date>
+      <news:title>بورصة الدواجن الرسمية - اسعار الفراخ والبيض اليوم</news:title>
+      <news:keywords>بورصة الدواجن, بورصة الدواجن الرئيسية, بورصة الدواجن الرسمية, بورصة الفراخ, اسعار الفراخ, بورصة البيض, بورصة البيض الرئيسية, أسعار الدواجن اليوم, أسعار الدواجن والكتاكيت اليوم</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- صفحة اسعار الفراخ والدواجن والبط والسمان -->
+  <url>
+    <loc>https://dwajn.net/poultry.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-05</news:publication_date>
+      <news:title>أسعار الفراخ والدواجن والبط والسمان اليوم - بورصة الدواجن</news:title>
+      <news:keywords>بورصة الدواجن, اسعار الدواجن, اسعار الفراخ البيضاء اليوم, أسعار الفراخ بورصة الدواجن اليوم, أسعار البط, أسعار البط البلدي اليوم, أسعار البط المسكوفي اليوم, أسعار البط اليوم, أسعار البط اليوم بالكيلو, أسعار الدجاج الأبيض اليوم, أسعار الدجاج اليوم, أسعار الدواجن, أسعار الدواجن البيضاء اليوم, أسعار الدواجن اليوم, أسعار الدواجن والكتاكيت اليوم, أسعار السمان اليوم, سعر الفراخ البيضاء, سعر الفراخ الساسو, سعر الرومي, سعر البط المسكوفي, سعر البط المولر, سعر البط الفرنساوي, سعر السمان</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- صفحة اسعار الكتاكيت -->
+  <url>
+    <loc>https://dwajn.net/chicks.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-05</news:publication_date>
+      <news:title>أسعار الكتاكيت اليوم - بورصة الدواجن</news:title>
+      <news:keywords>اسعار الكتاكيت, أسعار الكتاكيت اليوم, سعر كتكوت الوادي, أسعار الدواجن والكتاكيت اليوم, أسعار الكتاكيت البلدي اليوم, أسعار الفراخ الساسو اليوم, أسعار الكتاكيت البيضاء, بورصة الكتاكيت, سعر الكتكوت الأبيض, سعر الكتكوت الساسو, كتاكيت الوادي, كتاكيت الوطنية, كتاكيت الدقهلية, كتاكيت امات, كتاكيت كايرو ثري اي, كتاكيت القاهرة, كتاكيت دلتا مصر, كتاكيت رمضان فكري, كتاكيت الشروق</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- صفحة اسعار البيض -->
+  <url>
+    <loc>https://dwajn.net/eggs.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-05</news:publication_date>
+      <news:title>أسعار البيض اليوم - بورصة الدواجن</news:title>
+      <news:keywords>أسعار البيض اليوم, سعر البيض الأبيض, سعر البيض الأحمر, سعر البيض البلدي, بورصة البيض, بورصة البيض الرئيسية</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- صفحة اسعار العلف -->
+  <url>
+    <loc>https://dwajn.net/feed.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-05</news:publication_date>
+      <news:title>أسعار العلف اليوم - بورصة الدواجن</news:title>
+      <news:keywords>العلف, أسعار أعلاف الدواجن, شركات العلف, البادي, النامي, الناهي, أسعار العلف اليوم, سعر علف الدواجن, سعر علف التسمين, سعر علف البياض, أسعار الأعلاف, علف الوادي, علف الوطنية, علف الدقهلية, علف امات, علف كايرو ثري اي, علف القاهرة, علف دلتا مصر, علف رمضان فكري, علف الشروق, علف نيوهوب, علف فيدمكس, علف هيدة, علف نوفا
+    </news:news>
+  </url>
+  
+  <!-- صفحة اسعار الخامات -->
+  <url>
+    <loc>https://dwajn.net/materials.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-05</news:publication_date>
+      <news:title>أسعار الخامات الزراعية اليوم - بورصة الدواجن</news:title>
+      <news:keywords>أسعار الذرة الصفراء, أسعار الذرة البيضاء, سعر كسب فول الصويا, سعر نخالة القمح, أسعار الخامات الزراعية</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- صفحات المعلومات -->
+  <url>
+    <loc>https://dwajn.net/about.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dwajn.net/contact.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dwajn.net/data-methodology.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  
+  <url>
+    <loc>https://dwajn.net/data-quality.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  
+  <url>
+    <loc>https://dwajn.net/terms.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://dwajn.net/privacy.html</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
