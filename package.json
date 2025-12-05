@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Poultry Market Prices Website",
   "scripts": {
-    "build": "echo 'No build required - static site'"
-  }
+    "build": "exit 0"
+  },
+  "devDependencies": {}
 }
