@@ -1,10 +1,8 @@
 name = "poultry-prices"
 compatibility_date = "2025-12-05"
+pages_build_output_dir = "."
 
 # KV Namespace for storing poultry data
 [[kv_namespaces]]
 binding = "POULTRY_DATA"
 id = "82529e7cbc5347f9b5d7ea407f26dba9"
-
-# Pages configuration
-pages_build_output_dir = "."

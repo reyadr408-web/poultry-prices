@@ -32,7 +32,7 @@ async function loadFullData() {
         const response = await fetch('/api/data');
         if (response.ok) {
             fullData = await response.json();
-            console.log('✅ Data loaded from Cloudflare KV');
+            console.log('✅ Data loaded from Cloudflare KV:', fullData);
             updateDashboard();
             renderAllTables();
             return;
@@ -719,6 +719,8 @@ async function saveAllChanges() {
     try {
         fullData.lastUpdate = new Date().toISOString();
         
+        console.log('📤 Saving data to KV:', fullData);
+        
         // Save to Cloudflare KV via API
         try {
             const response = await fetch('/api/data', {
@@ -729,7 +731,9 @@ async function saveAllChanges() {
                 body: JSON.stringify(fullData)
             });
             
+            console.log('📡 Response status:', response.status);
             const result = await response.json();
+            console.log('📥 Response data:', result);
             
             if (result.success) {
                 hasUnsavedChanges = false;
