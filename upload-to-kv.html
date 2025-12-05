@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رفع البيانات إلى KV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .step {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-right: 4px solid #667eea;
+        }
+        .step h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .code-box {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 10px 0;
+            direction: ltr;
+            text-align: left;
+        }
+        button {
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #5568d3;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-right: 4px solid #28a745;
+            display: none;
+        }
+        .note {
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-right: 4px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 رفع البيانات إلى Cloudflare KV</h1>
+        
+        <div class="step">
+            <h3>📋 الخطوة 1: انسخ البيانات</h3>
+            <p>اضغط الزر أدناه لنسخ البيانات من ملف full-data.json</p>
+            <button onclick="copyData()">📋 نسخ البيانات</button>
+            <div id="copySuccess" class="success">✅ تم نسخ البيانات بنجاح!</div>
+        </div>
+
+        <div class="step">
+            <h3>🔑 الخطوة 2: اذهب إلى Cloudflare KV</h3>
+            <p>1. افتح: <a href="https://dash.cloudflare.com/" target="_blank">Cloudflare Dashboard</a></p>
+            <p>2. اذهب إلى <strong>Workers & Pages</strong> → <strong>KV</strong></p>
+            <p>3. اضغط على <strong>POULTRY_DATA</strong></p>
+        </div>
+
+        <div class="step">
+            <h3>➕ الخطوة 3: أضف البيانات</h3>
+            <p>1. ابحث عن زر <strong>"Add entry"</strong> أو <strong>"+"</strong></p>
+            <p>2. في حقل <strong>Key</strong>، اكتب:</p>
+            <div class="code-box">full-data</div>
+            <p>3. في حقل <strong>Value</strong>، الصق البيانات التي نسختها (Ctrl+V)</p>
+            <p>4. اضغط <strong>Save</strong> أو <strong>Add</strong></p>
+        </div>
+
+        <div class="note">
+            <strong>💡 ملاحظة:</strong> إذا لم تجد زر "Add entry"، جرب الضغط على أيقونة "⋮" (ثلاث نقاط) في الأعلى.
+        </div>
+
+        <div class="step">
+            <h3>✅ الخطوة 4: اختبر الموقع</h3>
+            <p>بعد حفظ البيانات في KV:</p>
+            <p>• افتح موقعك: <strong>https://poultry-prices.pages.dev</strong></p>
+            <p>• افتح لوحة التحكم: <strong>https://poultry-prices.pages.dev/admin</strong></p>
+            <p>• يجب أن تظهر جميع البيانات!</p>
+        </div>
+    </div>
+
+    <script>
+        async function copyData() {
+            try {
+                const response = await fetch('./admin/full-data.json');
+                const data = await response.json();
+                const dataStr = JSON.stringify(data);
+                
+                await navigator.clipboard.writeText(dataStr);
+                
+                document.getElementById('copySuccess').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('copySuccess').style.display = 'none';
+                }, 3000);
+            } catch (error) {
+                alert('خطأ في تحميل البيانات. تأكد من وجود ملف admin/full-data.json');
+            }
+        }
+    </script>
+</body>
+</html>

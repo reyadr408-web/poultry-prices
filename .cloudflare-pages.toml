@@ -1,8 +1,5 @@
-# Cloudflare Pages Build Configuration
+# Cloudflare Pages Configuration
+# This is a static site - no build needed
 
 [build]
-  command = ""
-  publish = "."
-
-[build.environment]
-  NODE_VERSION = "18"
+publish = "."
