@@ -703,9 +703,9 @@ async function saveAllChanges() {
     try {
         fullData.lastUpdate = new Date().toISOString();
         
-        // Save to Cloudflare KV
+        // Save to server via PHP
         try {
-            const response = await fetch('/api/data', {
+            const response = await fetch('./save-data.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -719,8 +719,8 @@ async function saveAllChanges() {
                 hasUnsavedChanges = false;
                 updateDashboard();
                 
-                // Trigger website reload to show new data
-                showAlert('✅ تم حفظ البيانات! سيتم تحديث الموقع تلقائياً خلال ثوانٍ', 'success');
+                // Success message
+                showAlert('✅ تم حفظ البيانات بنجاح! الموقع محدث الآن', 'success');
                 
                 // Download uploaded images if any
                 if (window.uploadedFiles && Object.keys(window.uploadedFiles).length > 0) {
@@ -730,9 +730,12 @@ async function saveAllChanges() {
                     }, 1000);
                 }
                 return;
+            } else {
+                throw new Error(result.message || 'فشل الحفظ');
             }
         } catch (serverError) {
-            console.log('Cloudflare save failed, falling back to download:', serverError);
+            console.error('Server save failed:', serverError);
+            showAlert('❌ فشل حفظ البيانات: ' + serverError.message, 'error');
         }
         
         // Fallback: Download JSON file
