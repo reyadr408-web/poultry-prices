@@ -897,6 +897,10 @@ tr[data-href] .row-link, div[data-href] .card-link {
     
     /* user-section removed */
     
+    .feed-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
     .settings-btn {
         order: 3;
         width: 100%;
