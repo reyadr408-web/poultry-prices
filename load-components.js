@@ -4,6 +4,25 @@
     const isDetailPage = window.location.pathname.includes('-details/');
     const basePath = isDetailPage ? '../components/' : 'components/';
     const logoPath = isDetailPage ? '../logo.png' : 'logo.png';
+    const faviconPath = isDetailPage ? '../favicon.png' : 'favicon.png';
+    
+    // Add favicon if not already present
+    function addFavicon() {
+        // Check if favicon already exists
+        if (!document.querySelector('link[rel="icon"]')) {
+            const favicon = document.createElement('link');
+            favicon.rel = 'icon';
+            favicon.type = 'image/png';
+            favicon.href = faviconPath;
+            document.head.appendChild(favicon);
+            
+            // Add apple-touch-icon
+            const appleFavicon = document.createElement('link');
+            appleFavicon.rel = 'apple-touch-icon';
+            appleFavicon.href = faviconPath;
+            document.head.appendChild(appleFavicon);
+        }
+    }
     
     // Load component function
     async function loadComponent(elementId, filename) {
@@ -45,6 +64,9 @@
     }
     
     function initComponents() {
+        // Add favicon first
+        addFavicon();
+        
         // Load header and footer
         loadComponent('header-placeholder', 'header.html');
         loadComponent('footer-placeholder', 'footer.html');
