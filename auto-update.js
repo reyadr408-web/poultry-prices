@@ -2,6 +2,9 @@
 // Loads data from Cloudflare KV and updates all pages
 
 (async function() {
+    // Add loading class to hide prices during update
+    document.body.classList.add('prices-loading');
+    
     try {
         // Load data from Cloudflare Worker
         const response = await fetch('/api/data');
@@ -35,6 +38,9 @@
         console.log('✅ Website data updated from Cloudflare KV');
     } catch (error) {
         console.log('Using static data (Cloudflare KV not available):', error);
+    } finally {
+        // Remove loading class to show updated prices
+        document.body.classList.remove('prices-loading');
     }
 })();
 

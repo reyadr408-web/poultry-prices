@@ -453,6 +453,17 @@ body {
     margin-top: 4px;
 }
 
+/* Hide prices during loading to prevent flash of old prices */
+body.prices-loading .price-badge {
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+body:not(.prices-loading) .price-badge {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
 /* Poultry Table Specific */
 .poultry-table th:first-child,
 .poultry-table td:first-child {
