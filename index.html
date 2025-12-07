@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
     
+    <!-- Favicon & Site Identity -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="CAi-K78T1cY-OZRBcMC-bcay6On3bkzREjq8mglofgw" />
     
@@ -103,51 +107,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="main-page">
-    <!-- Header -->
-    <header class="app-header">
-        <div class="header-content">
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <img src="logo.png" alt="لوجو داجن" style="width: 90px; height: 90px; object-fit: contain;">
-                <div style="display: flex; flex-direction: column; gap: 5px;">
-                    <span style="color: #fbbf24; font-weight: 700; font-size: 24px;">موقع دواجن</span>
-                    <h1 class="app-title" style="margin: 0;">بورصة الدواجن الرئيسية</h1>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Quick Navigation Menu -->
-    <nav class="quick-nav">
-        <div class="nav-container">
-            <a href="poultry.html" class="nav-item">
-                <span class="nav-icon">🐔</span>
-                <span class="nav-label">أسعار الفراخ</span>
-            </a>
-            <a href="chicks.html" class="nav-item">
-                <span class="nav-icon">🐤</span>
-                <span class="nav-label">أسعار الكتاكيت</span>
-            </a>
-            <a href="eggs.html" class="nav-item">
-                <span class="nav-icon">🥚</span>
-                <span class="nav-label">أسعار البيض</span>
-            </a>
-            <a href="feed.html" class="nav-item">
-                <span class="nav-icon">🌾</span>
-                <span class="nav-label">أسعار العلف</span>
-            </a>
-            <a href="materials.html" class="nav-item">
-                <span class="nav-icon">📦</span>
-                <span class="nav-label">الخامات</span>
-            </a>
-        </div>
-    </nav>
-
-    <!-- Date Bar -->
-    <div class="date-bar">
-        <span class="calendar-icon">📅</span>
-        <span class="date-text" id="currentDate"></span>
-        <span class="last-update">: آخر تحديث</span>
-    </div>
+    <!-- Header - Loaded from components/header.html -->
+    <div id="header-placeholder"></div>
 
     <!-- App Download Banner -->
     <div class="app-banner">
@@ -1180,6 +1141,12 @@
     }
     updateTableDates();
     </script>
+    
+    <!-- Footer - Loaded from components/footer.html -->
+    <div id="footer-placeholder"></div>
+    
+    <!-- Load shared components -->
+    <script src="load-components.js"></script>
     <!-- Make links right-clickable -->
     <script src="make-links-clickable.js"></script>
     <!-- Auto-update from Cloudflare KV -->
