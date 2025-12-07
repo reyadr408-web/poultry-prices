@@ -42,6 +42,9 @@ function updatePoultryPrices(poultry) {
     const tbody = document.querySelector('#poultry tbody');
     if (!tbody) return;
     
+    // Don't update HTML - keep static onclick handlers
+    return;
+    
     tbody.innerHTML = poultry.map(item => {
         const slug = item.slug || item.name.toLowerCase().replace(/\s+/g, '-');
         return `
@@ -65,6 +68,10 @@ function updatePoultryPrices(poultry) {
 function updateChicksCompanies(companies) {
     const tbody = document.querySelector('#chicks tbody');
     if (!tbody) return;
+    
+    // Don't update HTML - keep static onclick handlers
+    // Only update prices if needed
+    return;
     
     // Get current date in DD/MM format
     const now = new Date();
@@ -94,6 +101,9 @@ function updateChicksCompanies(companies) {
 function updateFeedCompanies(companies) {
     const feedContainer = document.querySelector('#feed > div');
     if (!feedContainer) return;
+    
+    // Don't update HTML - keep static onclick handlers
+    return;
     
     feedContainer.innerHTML = companies.map(item => {
         const slug = item.slug || item.name.toLowerCase().replace(/\s+/g, '-').replace(/علف\s*/g, '');
@@ -127,6 +137,9 @@ function updateEggsPrices(eggs) {
     const tbody = document.querySelector('#eggs tbody');
     if (!tbody) return;
     
+    // Don't update HTML - keep static onclick handlers
+    return;
+    
     tbody.innerHTML = eggs.map(item => {
         const slug = item.slug || item.name.toLowerCase().replace(/\s+/g, '-').replace(/بيض\s*/g, '');
         return `
@@ -155,6 +168,9 @@ function updateMaterialsPrices(materials) {
     const day = String(now.getDate()).padStart(2, '0');
     const month = String(now.getMonth() + 1).padStart(2, '0');
     const currentDate = `${day}/${month}`;
+    
+    // Don't update HTML - keep static onclick handlers
+    return;
     
     tbody.innerHTML = materials.map(item => {
         const slug = item.slug || item.name.toLowerCase().replace(/\s+/g, '-');
