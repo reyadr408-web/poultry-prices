@@ -114,8 +114,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="app-header">
+    <!-- Header - Loaded from components/header.html -->
+    <div id="header-placeholder"></div>
+    
+    <!-- Legacy header for reference (will be removed) -->
+    <header class="app-header" style="display: none;">
         <div class="header-content">
             <a href="index.html" style="text-decoration: none; color: white;">
                 <div style="display: flex; align-items: center; gap: 15px;">
@@ -384,6 +387,12 @@
         }
         updateDate();
     </script>
+    
+    <!-- Footer - Loaded from components/footer.html -->
+    <div id="footer-placeholder"></div>
+    
+    <!-- Load shared components -->
+    <script src="load-components.js"></script>
     <script src="make-links-clickable.js"></script>
     <script src="auto-update.js"></script>
 </body>
