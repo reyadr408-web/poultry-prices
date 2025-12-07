@@ -137,6 +137,11 @@
       "name": "القصبي",
       "logo": "qasaby-logo.png",
       "price": "12.0"
+    },
+    {
+      "name": "نيوجين",
+      "logo": "newgen-logo.png",
+      "price": "15.0"
     }
   ],
   "feedCompanies": [

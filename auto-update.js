@@ -42,51 +42,66 @@ function updatePoultryPrices(poultry) {
     const tbody = document.querySelector('#poultry tbody');
     if (!tbody) return;
     
-    tbody.innerHTML = poultry.map(item => `
-        <tr>
+    tbody.innerHTML = poultry.map(item => {
+        const slug = item.slug || item.name.toLowerCase().replace(/\s+/g, '-');
+        return `
+        <tr onclick="window.location.href='poultry/${slug}.html'" style="cursor: pointer;">
             <td class="item-cell">
                 <span class="item-icon">${item.icon || '🐔'}</span>
                 <span class="item-name">${item.name}</span>
             </td>
             <td class="price-cell">
                 <span class="price-badge blue">${item.priceAnnounced}</span>
+                <span class="unit-text">جنيه/كيلو</span>
             </td>
             <td class="price-cell">
                 <span class="price-badge green">${item.priceExecution}</span>
+                <span class="unit-text">جنيه/كيلو</span>
             </td>
         </tr>
-    `).join('');
+    `;}).join('');
 }
 
 function updateChicksCompanies(companies) {
     const tbody = document.querySelector('#chicks tbody');
     if (!tbody) return;
     
-    tbody.innerHTML = companies.map(item => `
-        <tr>
+    // Get current date in DD/MM format
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const currentDate = `${day}/${month}`;
+    
+    tbody.innerHTML = companies.map(item => {
+        // Use slug if available, otherwise derive from name (remove 'كتكوت' prefix)
+        const slug = item.slug || item.name.toLowerCase().replace(/\s+/g, '-').replace(/كتكوت\s*/g, '');
+        return `
+        <tr onclick="window.location.href='chicks-details/${slug}-chick.html'" style="cursor: pointer;">
             <td class="item-cell">
                 ${item.logo ? `<img src="${item.logo}" alt="${item.name}" style="width: 30px; height: 30px; border-radius: 6px; object-fit: contain; vertical-align: middle; margin-right: 8px;">` : '<span class="item-icon">🐣</span>'}
-                <span class="item-name">${item.name}</span>
+                <span class="item-name">${item.name.includes('كتكوت') ? item.name : 'كتكوت ' + item.name}</span>
             </td>
             <td class="price-cell">
                 <span class="price-badge teal">${item.price}</span>
             </td>
             <td class="price-cell">
-                <span style="color: #6b7280; font-size: 14px;">04/12</span>
+                <span style="color: #6b7280; font-size: 14px;">${currentDate}</span>
             </td>
         </tr>
-    `).join('');
+    `;}).join('');
 }
 
 function updateFeedCompanies(companies) {
     const feedContainer = document.querySelector('#feed > div');
     if (!feedContainer) return;
     
-    feedContainer.innerHTML = companies.map(item => `
-        <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+    feedContainer.innerHTML = companies.map(item => {
+        const slug = item.slug || item.name.toLowerCase().replace(/\s+/g, '-').replace(/علف\s*/g, '');
+        return `
+        <div onclick="window.location.href='feed-details/${slug}-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
             <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                 ${item.logo ? `<img src="${item.logo}" alt="${item.name}" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">` : ''}
-                ${item.name}
+                علف ${item.name}
             </h3>
             <div style="display: flex; gap: 8px; justify-content: space-between;">
                 <div style="text-align: center; padding: 10px; flex: 1;">
@@ -105,15 +120,17 @@ function updateFeedCompanies(companies) {
                 </div>
             </div>
         </div>
-    `).join('');
+    `;}).join('');
 }
 
 function updateEggsPrices(eggs) {
     const tbody = document.querySelector('#eggs tbody');
     if (!tbody) return;
     
-    tbody.innerHTML = eggs.map(item => `
-        <tr>
+    tbody.innerHTML = eggs.map(item => {
+        const slug = item.slug || item.name.toLowerCase().replace(/\s+/g, '-').replace(/بيض\s*/g, '');
+        return `
+        <tr onclick="window.location.href='eggs-details/${slug}-eggs.html'" style="cursor: pointer;">
             <td class="item-cell">
                 <span class="item-icon">🥚</span>
                 <span class="item-name">${item.name}</span>
@@ -122,22 +139,37 @@ function updateEggsPrices(eggs) {
                 <span class="price-badge ${item.name.includes('أبيض') ? 'blue' : item.name.includes('أحمر') ? 'brown' : 'teal'}">${item.price}</span>
             </td>
         </tr>
-    `).join('');
+    `;}).join('');
 }
 
 function updateMaterialsPrices(materials) {
-    const tbody = document.querySelector('table.prices-table tbody');
-    if (!tbody || !window.location.pathname.includes('materials')) return;
+    // Find materials table - works in both index.html and materials.html
+    const materialsSection = document.querySelector('#materials');
+    if (!materialsSection) return;
     
-    tbody.innerHTML = materials.map(item => `
-        <tr>
+    const tbody = materialsSection.querySelector('table.prices-table tbody');
+    if (!tbody) return;
+    
+    // Get current date in DD/MM format
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const currentDate = `${day}/${month}`;
+    
+    tbody.innerHTML = materials.map(item => {
+        const slug = item.slug || item.name.toLowerCase().replace(/\s+/g, '-');
+        return `
+        <tr onclick="window.location.href='materials-details/${slug}.html'" style="cursor: pointer;">
             <td class="item-cell">
                 <span class="item-icon">${item.icon || '🌾'}</span>
                 <span class="item-name">${item.name}</span>
             </td>
             <td class="price-cell">
-                <span class="price-badge teal">${item.price}</span>
+                <span class="price-badge orange">${item.price}</span>
+            </td>
+            <td class="price-cell">
+                <span style="color: #6b7280; font-size: 14px;">${currentDate}</span>
             </td>
         </tr>
-    `).join('');
+    `;}).join('');
 }

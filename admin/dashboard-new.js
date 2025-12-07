@@ -1,12 +1,18 @@
 // Dashboard Management System for Poultry Market Website
+console.log('🚀 Dashboard script loaded!');
+
 let fullData = null;
 let currentEditIndex = null;
 let currentEditCategory = null;
 let hasUnsavedChanges = false;
 
 // Check if user is logged in
+console.log('🔐 Checking login status...');
 if (localStorage.getItem('isLoggedIn') !== 'true') {
+    console.log('❌ Not logged in, redirecting...');
     window.location.href = 'login.html';
+} else {
+    console.log('✅ User is logged in');
 }
 
 // Load data on page load
@@ -33,12 +39,18 @@ async function loadFullData() {
         if (response.ok) {
             fullData = await response.json();
             console.log('✅ Data loaded from Cloudflare KV:', fullData);
+            console.log('📊 Poultry items:', fullData.poultry?.length || 0);
+            console.log('🐣 Chicks companies:', fullData.chicksCompanies?.length || 0);
+            console.log('🌾 Feed companies:', fullData.feedCompanies?.length || 0);
             updateDashboard();
             renderAllTables();
             return;
+        } else {
+            console.error('❌ API response not OK:', response.status);
         }
     } catch (error) {
-        console.log('Cloudflare KV not available, trying local file...');
+        console.error('❌ Cloudflare KV error:', error);
+        console.log('Trying local file...');
     }
     
     try {
@@ -152,26 +164,42 @@ function updateDashboard() {
 
 // Render all tables
 function renderAllTables() {
+    if (!fullData) {
+        console.error('❌ fullData is null - cannot render tables');
+        return;
+    }
+    console.log('🎨 Rendering all tables...');
     renderPoultryTable();
     renderChicksTable();
     renderEggsTable();
     renderFeedTable();
     renderMaterialsTable();
+    console.log('✅ All tables rendered');
 }
 
 // ============ POULTRY TABLE ============
 function renderPoultryTable() {
     const tbody = document.getElementById('poultryTableBody');
+    if (!tbody) {
+        console.error('❌ poultryTableBody element not found');
+        return;
+    }
     tbody.innerHTML = '';
     
+    if (!fullData || !fullData.poultry || fullData.poultry.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7">لا توجد بيانات</td></tr>';
+        return;
+    }
+    
+    console.log(`📊 Rendering ${fullData.poultry.length} poultry items`);
     fullData.poultry.forEach((item, index) => {
         const row = `
             <tr>
                 <td>${index + 1}</td>
-                <td>${item.icon}</td>
-                <td>${item.name}</td>
-                <td>${item.priceAnnounced} جنيه</td>
-                <td>${item.priceExecution} جنيه</td>
+                <td contenteditable="true" data-field="icon" data-index="${index}" data-category="poultry" onblur="updateFieldDirectly(this)">${item.icon}</td>
+                <td contenteditable="true" data-field="name" data-index="${index}" data-category="poultry" onblur="updateFieldDirectly(this)">${item.name}</td>
+                <td contenteditable="true" data-field="priceAnnounced" data-index="${index}" data-category="poultry" onblur="updateFieldDirectly(this)">${item.priceAnnounced}</td>
+                <td contenteditable="true" data-field="priceExecution" data-index="${index}" data-category="poultry" onblur="updateFieldDirectly(this)">${item.priceExecution}</td>
                 <td>
                     <button class="btn-move" onclick="moveItem('poultry', ${index}, -1)" ${index === 0 ? 'disabled' : ''}>⬆️</button>
                     <button class="btn-move" onclick="moveItem('poultry', ${index}, 1)" ${index === fullData.poultry.length - 1 ? 'disabled' : ''}>⬇️</button>
@@ -184,6 +212,31 @@ function renderPoultryTable() {
         `;
         tbody.innerHTML += row;
     });
+}
+
+// Update field directly when editing in table
+function updateFieldDirectly(cell) {
+    const category = cell.dataset.category;
+    const index = parseInt(cell.dataset.index);
+    const field = cell.dataset.field;
+    const newValue = cell.textContent.trim();
+    
+    console.log(`✏️ Direct edit: ${category}[${index}].${field} = "${newValue}"`);
+    
+    if (category === 'poultry') {
+        fullData.poultry[index][field] = newValue;
+    } else if (category === 'chicks') {
+        fullData.chicksCompanies[index][field] = newValue;
+    } else if (category === 'feed') {
+        fullData.feedCompanies[index][field] = newValue;
+    } else if (category === 'eggs') {
+        fullData.eggs[index][field] = newValue;
+    } else if (category === 'materials') {
+        fullData.materials[index][field] = newValue;
+    }
+    
+    hasUnsavedChanges = true;
+    console.log('📝 Data updated in memory, hasUnsavedChanges =', hasUnsavedChanges);
 }
 
 function addPoultry() {
@@ -267,8 +320,8 @@ function renderChicksTable() {
             <tr>
                 <td>${index + 1}</td>
                 <td>${logoHTML}</td>
-                <td>${item.name}</td>
-                <td>${item.price} جنيه</td>
+                <td contenteditable="true" data-field="name" data-index="${index}" data-category="chicks" onblur="updateFieldDirectly(this)">${item.name}</td>
+                <td contenteditable="true" data-field="price" data-index="${index}" data-category="chicks" onblur="updateFieldDirectly(this)">${item.price}</td>
                 <td>
                     <button class="btn-move" onclick="moveItem('chicksCompanies', ${index}, -1)" ${index === 0 ? 'disabled' : ''}>⬆️</button>
                     <button class="btn-move" onclick="moveItem('chicksCompanies', ${index}, 1)" ${index === fullData.chicksCompanies.length - 1 ? 'disabled' : ''}>⬇️</button>
@@ -368,10 +421,10 @@ function renderFeedTable() {
             <tr>
                 <td>${index + 1}</td>
                 <td>${logoHTML}</td>
-                <td>${item.name}</td>
-                <td>${item.bady23} جنيه</td>
-                <td>${item.namy21} جنيه</td>
-                <td>${item.nahy19} جنيه</td>
+                <td contenteditable="true" data-field="name" data-index="${index}" data-category="feed" onblur="updateFieldDirectly(this)">${item.name}</td>
+                <td contenteditable="true" data-field="bady23" data-index="${index}" data-category="feed" onblur="updateFieldDirectly(this)">${item.bady23}</td>
+                <td contenteditable="true" data-field="namy21" data-index="${index}" data-category="feed" onblur="updateFieldDirectly(this)">${item.namy21}</td>
+                <td contenteditable="true" data-field="nahy19" data-index="${index}" data-category="feed" onblur="updateFieldDirectly(this)">${item.nahy19}</td>
                 <td>
                     <button class="btn-move" onclick="moveItem('feedCompanies', ${index}, -1)" ${index === 0 ? 'disabled' : ''}>⬆️</button>
                     <button class="btn-move" onclick="moveItem('feedCompanies', ${index}, 1)" ${index === fullData.feedCompanies.length - 1 ? 'disabled' : ''}>⬇️</button>
@@ -478,8 +531,8 @@ function renderEggsTable() {
         const row = `
             <tr>
                 <td>${index + 1}</td>
-                <td>${item.name}</td>
-                <td>${item.price} جنيه</td>
+                <td contenteditable="true" data-field="name" data-index="${index}" data-category="eggs" onblur="updateFieldDirectly(this)">${item.name}</td>
+                <td contenteditable="true" data-field="price" data-index="${index}" data-category="eggs" onblur="updateFieldDirectly(this)">${item.price}</td>
                 <td>
                     <button class="btn-move" onclick="moveItem('eggs', ${index}, -1)" ${index === 0 ? 'disabled' : ''}>⬆️</button>
                     <button class="btn-move" onclick="moveItem('eggs', ${index}, 1)" ${index === fullData.eggs.length - 1 ? 'disabled' : ''}>⬇️</button>
@@ -562,9 +615,9 @@ function renderMaterialsTable() {
         const row = `
             <tr>
                 <td>${index + 1}</td>
-                <td>${item.icon}</td>
-                <td>${item.name}</td>
-                <td>${item.price} جنيه</td>
+                <td contenteditable="true" data-field="icon" data-index="${index}" data-category="materials" onblur="updateFieldDirectly(this)">${item.icon}</td>
+                <td contenteditable="true" data-field="name" data-index="${index}" data-category="materials" onblur="updateFieldDirectly(this)">${item.name}</td>
+                <td contenteditable="true" data-field="price" data-index="${index}" data-category="materials" onblur="updateFieldDirectly(this)">${item.price}</td>
                 <td>
                     <button class="btn-move" onclick="moveItem('materials', ${index}, -1)" ${index === 0 ? 'disabled' : ''}>⬆️</button>
                     <button class="btn-move" onclick="moveItem('materials', ${index}, 1)" ${index === fullData.materials.length - 1 ? 'disabled' : ''}>⬇️</button>
@@ -716,13 +769,23 @@ function showAlert(message, type) {
 
 // Save all changes
 async function saveAllChanges() {
+    console.log('🔴 saveAllChanges() called!');
+    
     try {
         fullData.lastUpdate = new Date().toISOString();
         
-        console.log('📤 Saving data to KV:', fullData);
+        console.log('📤 Preparing to save data...');
+        console.log('📊 Data structure:', {
+            poultry: fullData.poultry?.length,
+            chicks: fullData.chicksCompanies?.length,
+            feed: fullData.feedCompanies?.length,
+            eggs: fullData.eggs?.length,
+            materials: fullData.materials?.length
+        });
         
         // Save to Cloudflare KV via API
         try {
+            console.log('🌐 Sending POST request to /api/data...');
             const response = await fetch('/api/data', {
                 method: 'POST',
                 headers: {
@@ -731,55 +794,54 @@ async function saveAllChanges() {
                 body: JSON.stringify(fullData)
             });
             
-            console.log('📡 Response status:', response.status);
+            console.log('📡 Response received! Status:', response.status);
+            console.log('📡 Response headers:', [...response.headers.entries()]);
+            
             const result = await response.json();
             console.log('📥 Response data:', result);
             
             if (result.success) {
                 hasUnsavedChanges = false;
-                updateDashboard();
+                console.log('✅ Save successful!');
                 
                 // Success message
-                showAlert('✅ تم حفظ البيانات بنجاح! الموقع محدث الآن', 'success');
+                showAlert('✅ تم حفظ البيانات بنجاح! جاري تحديث الصفحة...', 'success');
                 
                 // Download uploaded images if any
                 if (window.uploadedFiles && Object.keys(window.uploadedFiles).length > 0) {
-                    setTimeout(() => {
-                        downloadUploadedFiles();
-                        showAlert('📥 يرجى رفع الصور المحملة إلى مجلد الموقع', 'info');
-                    }, 1000);
+                    downloadUploadedFiles();
+                    showAlert('📥 يرجى رفع الصور المحملة إلى مجلد الموقع', 'info');
                 }
+                
+                // Reload page after 1.5 seconds to show fresh data from KV
+                console.log('⏱️ Reloading page in 1.5 seconds...');
+                setTimeout(() => {
+                    console.log('🔄 Reloading now...');
+                    window.location.reload();
+                }, 1500);
                 return;
             } else {
+                console.error('❌ Server returned success=false:', result.message);
                 throw new Error(result.message || 'فشل الحفظ');
             }
         } catch (serverError) {
-            console.error('Cloudflare KV save failed:', serverError);
+            console.error('❌ Cloudflare KV save failed:', serverError);
+            console.error('Error details:', {
+                name: serverError.name,
+                message: serverError.message,
+                stack: serverError.stack
+            });
             showAlert('❌ فشل حفظ البيانات على Cloudflare: ' + serverError.message, 'error');
+            throw serverError; // Stop execution if save fails
         }
-        
-        // Fallback: Download JSON file
-        const dataStr = JSON.stringify(fullData, null, 2);
-        const blob = new Blob([dataStr], { type: 'application/json' });
-        const url = URL.createObjectURL(blob);
-        
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'full-data.json';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-        
-        // Download uploaded images
-        if (window.uploadedFiles && Object.keys(window.uploadedFiles).length > 0) {
-            setTimeout(() => downloadUploadedFiles(), 500);
-        }
-        
-        hasUnsavedChanges = false;
-        showAlert('⬇️ تم حفظ البيانات محلياً. يرجى رفعها للسيرفر يدوياً', 'success');
-    } catch (error) {
-        showAlert('❌ فشل حفظ البيانات: ' + error.message, 'error');
+    } catch (mainError) {
+        console.error('❌ Save failed completely:', mainError);
+        console.error('Complete error:', {
+            name: mainError.name,
+            message: mainError.message,
+            stack: mainError.stack
+        });
+        showAlert('❌ فشل حفظ البيانات: ' + mainError.message, 'error');
     }
 }
 

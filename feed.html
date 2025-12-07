@@ -88,13 +88,38 @@
         <span class="date-text" id="currentDate"></span>
         <span class="last-update">: آخر تحديث</span>
     </div>
+
+    <!-- App Download Banner -->
+    <div class="app-banner">
+        <div class="banner-content">
+            <div class="banner-icon">📱</div>
+            <div class="banner-text">
+                <p style="font-size: 15px; color: #ffffff; margin: 0 0 10px 0; line-height: 1.5; font-weight: 500;">متفوتش أي تغيير… حمل تطبيقنا واعرف أحدث أسعار الدواجن والبيض والكتاكيت والأعلاف فورًا وبإشعارات دقيقة تثق فيها.</p>
+                <h3>تحميل تطبيق البورصة الرئيسية</h3>
+                <div class="app-stats">
+                    <div class="rating">
+                        <span class="rating-number">4.8</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <span class="downloads">+50K تحميل</span>
+                </div>
+                <p class="app-features">📊 تابع الاسعار بث مباشر • 🔔 إشعارات فورية</p>
+            </div>
+            <a href="#" class="download-btn" onclick="downloadApp()">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+                     alt="Get it on Google Play" 
+                     style="height: 40px;">
+            </a>
+        </div>
+    </div>
+    
     <main class="main-content">
         <section id="feed" class="content-section">
             <h2 class="section-title"><span class="section-icon">🌾</span>أسعار الأعلاف</h2>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;">
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px;">
                 <!-- نيو هوب -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/newhope-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="newhope-logo.png" alt="نيو هوب" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         نيو هوب
@@ -118,7 +143,7 @@
                 </div>
 
                 <!-- هايدا -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/haida-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="haida-logo.png" alt="هايدا" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         هايدا
@@ -142,7 +167,7 @@
                 </div>
 
                 <!-- الدقهلية -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/dakahlia-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="daqahliya-logo.png" alt="الدقهلية" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         الدقهلية
@@ -166,7 +191,7 @@
                 </div>
 
                 <!-- الايمان -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/alamal-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="eman-logo.png" alt="الايمان" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         الايمان
@@ -190,7 +215,7 @@
                 </div>
 
                 <!-- القائد -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/cairo-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="qaed-logo.png" alt="القائد" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         القائد
@@ -214,7 +239,7 @@
                 </div>
 
                 <!-- الاهرام -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/egypt-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="ahram-logo.png" alt="الاهرام" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         الاهرام
@@ -238,7 +263,7 @@
                 </div>
 
                 <!-- الفتح -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/rashid-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="fath-logo.png" alt="الفتح" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         الفتح
@@ -262,7 +287,7 @@
                 </div>
 
                 <!-- الوادى -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/alwatania-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="wadi-logo.png" alt="الوادى" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         الوادى
@@ -286,7 +311,7 @@
                 </div>
 
                 <!-- نوفافيد -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/soha-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="nova-logo.png" alt="نوفافيد" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         نوفافيد
@@ -310,7 +335,7 @@
                 </div>
 
                 <!-- المجد -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/almogy-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="magd-logo.png" alt="المجد" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         المجد
@@ -334,7 +359,7 @@
                 </div>
 
                 <!-- المصرية الهولندية -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/misr-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="tarek-logo.png" alt="المصرية الهولندية" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         المصرية الهولندية
@@ -358,7 +383,7 @@
                 </div>
 
                 <!-- فيدمكس -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/veto-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="fedmex-logo.png" alt="فيدمكس" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         فيدمكس
@@ -382,7 +407,7 @@
                 </div>
 
                 <!-- السلام -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/teba-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="salam-logo.png" alt="السلام" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         السلام
@@ -406,7 +431,7 @@
                 </div>
 
                 <!-- سامي عياد -->
-                <div style="background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
+                <div onclick="window.location.href='feed-details/abostate-feed.html'" style="cursor: pointer; background: white; padding: 15px; border-radius: 10px; border: 1px solid #e5e7eb;">
                     <h3 style="color: #374151; font-size: 18px; margin-bottom: 12px; font-weight: 600; border-bottom: 2px solid #f3f4f6; padding-bottom: 8px; display: flex; align-items: center; gap: 10px;">
                         <img src="samy-logo.png" alt="سامي عياد" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain;">
                         سامي عياد
@@ -443,7 +468,20 @@
                 </div>
                 <p style="margin: 10px 0; font-size: 14px; color: #9ca3af;"> 2025 بورصة الدواجن الرئيسية - جميع الحقوق محفوظة</p>
             </div></div></footer>
-    <script>function updateDate(){const dateElement=document.getElementById('currentDate');const now=new Date();const options={year:'numeric',month:'long',day:'numeric',weekday:'long'};const arabicDate=now.toLocaleDateString('ar-EG',options);dateElement.textContent=arabicDate;}updateDate();</script>
+    <script>
+        function updateDate(){
+            const dateElement=document.getElementById('currentDate');
+            const now=new Date();
+            const options={year:'numeric',month:'long',day:'numeric',weekday:'long'};
+            const arabicDate=now.toLocaleDateString('ar-EG',options);
+            dateElement.textContent=arabicDate;
+        }
+        updateDate();
+        
+        function downloadApp() {
+            window.open('https://play.google.com/store/apps', '_blank');
+        }
+    </script>
     <script src="auto-update.js"></script>
 </body>
 </html>

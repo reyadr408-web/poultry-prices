@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    background: #f8f9fa;
     direction: rtl;
     min-height: 100vh;
     overflow-x: hidden;
@@ -1070,4 +1070,292 @@ body {
         max-width: 100% !important;
         box-sizing: border-box !important;
     }
+}
+/* Poultry Detail Pages */
+.breadcrumb {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #1d4ed8;
+}
+
+.poultry-detail-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+    border-radius: 16px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.hero-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+.price-section {
+    margin-bottom: 30px;
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.price-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.price-card.announced {
+    border-top: 4px solid #3b82f6;
+}
+
+.price-card.execution {
+    border-top: 4px solid #10b981;
+}
+
+.price-label {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price-value {
+    font-size: 48px;
+    font-weight: bold;
+    color: #111;
+    margin: 10px 0;
+}
+
+.price-unit {
+    font-size: 14px;
+    color: #666;
+}
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    line-height: 1.8;
+}
+
+.info-card h3 {
+    color: #2563eb;
+    margin: 25px 0 15px 0;
+    font-size: 20px;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-card ul li:last-child {
+    border-bottom: none;
+}
+
+.timeline {
+    margin-top: 20px;
+}
+
+.timeline-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f8f9fa;
+    border-left: 4px solid #3b82f6;
+    border-radius: 8px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.faq-item h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.faq-item p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.related-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.related-link-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+}
+
+.related-link-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    background: #f8f9fa;
+}
+
+.link-icon {
+    font-size: 32px;
+    margin-left: 15px;
+}
+
+.link-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.site-footer {
+    background: #1f2937;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-icon {
+        font-size: 60px;
+    }
+    
+    .page-title {
+        font-size: 28px;
+    }
+    
+    .page-subtitle {
+        font-size: 16px;
+    }
+    
+    .price-value {
+        font-size: 36px;
+    }
+    
+    .related-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Clickable rows */
+.clickable-row {
+    transition: background-color 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.clickable-row:hover {
+    background-color: #f0f9ff !important;
+    transform: scale(1.01);
+}
+
+.clickable-row:active {
+    transform: scale(0.99);
+}
+
+/* Feed cards hover effect - index.html */
+#feed > div > div[onclick] {
+    cursor: pointer;
+}
+
+#feed > div > div[onclick]:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-color: #3b82f6;
+}
+
+/* Materials table clickable rows */
+#materials table tbody tr[onclick] {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#materials table tbody tr[onclick]:hover {
+    background-color: #f0f9ff !important;
 }

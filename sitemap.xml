@@ -9,7 +9,7 @@
   <!-- الصفحة الرئيسية - بورصة الدواجن الرئيسية -->
   <url>
     <loc>https://dwajn.net/index.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <news:news>
@@ -17,16 +17,16 @@
         <news:name>بورصة الدواجن الرئيسية</news:name>
         <news:language>ar</news:language>
       </news:publication>
-      <news:publication_date>2025-12-05</news:publication_date>
-      <news:title>بورصة الدواجن الرسمية - اسعار الفراخ والبيض اليوم</news:title>
-      <news:keywords>بورصة الدواجن, بورصة الدواجن الرئيسية, بورصة الدواجن الرسمية, بورصة الفراخ, اسعار الفراخ, بورصة البيض, بورصة البيض الرئيسية, أسعار الدواجن اليوم, أسعار الدواجن والكتاكيت اليوم</news:keywords>
+      <news:publication_date>2025-12-06</news:publication_date>
+      <news:title>بورصة الدواجن الرسمية - سعر وأسعار الفراخ والبيض والكتاكيت والأعلاف اليوم</news:title>
+      <news:keywords>بورصة الدواجن, بورصة الدواجن الرئيسية, بورصة الدواجن الرسمية, بورصة الفراخ, اسعار الفراخ, سعر الفراخ, سعر الفراخ البيضاء, أسعار الفراخ البيضاء اليوم, بورصة البيض, بورصة البيض الرئيسية, سعر البيض, أسعار البيض, سعر البيض الأبيض, أسعار البيض الأبيض, سعر البيض الأحمر, أسعار الدواجن اليوم, سعر الدواجن اليوم, أسعار الدواجن والكتاكيت اليوم, سعر الكتاكيت, أسعار الكتاكيت, سعر الكتكوت, أسعار الأعلاف, سعر العلف, سعر علف الدواجن, سعر الرومي, أسعار الرومي, سعر البط, أسعار البط, سعر السمان, أسعار السمان</news:keywords>
     </news:news>
   </url>
   
   <!-- صفحة اسعار الفراخ والدواجن والبط والسمان -->
   <url>
     <loc>https://dwajn.net/poultry.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <news:news>
@@ -34,16 +34,16 @@
         <news:name>بورصة الدواجن الرئيسية</news:name>
         <news:language>ar</news:language>
       </news:publication>
-      <news:publication_date>2025-12-05</news:publication_date>
-      <news:title>أسعار الفراخ والدواجن والبط والسمان اليوم - بورصة الدواجن</news:title>
-      <news:keywords>بورصة الدواجن, اسعار الدواجن, اسعار الفراخ البيضاء اليوم, أسعار الفراخ بورصة الدواجن اليوم, أسعار البط, أسعار البط البلدي اليوم, أسعار البط المسكوفي اليوم, أسعار البط اليوم, أسعار البط اليوم بالكيلو, أسعار الدجاج الأبيض اليوم, أسعار الدجاج اليوم, أسعار الدواجن, أسعار الدواجن البيضاء اليوم, أسعار الدواجن اليوم, أسعار الدواجن والكتاكيت اليوم, أسعار السمان اليوم, سعر الفراخ البيضاء, سعر الفراخ الساسو, سعر الرومي, سعر البط المسكوفي, سعر البط المولر, سعر البط الفرنساوي, سعر السمان</news:keywords>
+      <news:publication_date>2025-12-06</news:publication_date>
+      <news:title>سعر وأسعار الفراخ والدواجن والبط والرومي والسمان اليوم بالكيلو - بورصة الدواجن</news:title>
+      <news:keywords>بورصة الدواجن, اسعار الدواجن, سعر الدواجن, اسعار الفراخ البيضاء اليوم, سعر الفراخ البيضاء اليوم, أسعار الفراخ بورصة الدواجن اليوم, سعر الفراخ بورصة الدواجن اليوم, أسعار البط, سعر البط, أسعار البط البلدي اليوم, سعر البط البلدي اليوم, أسعار البط المسكوفي اليوم, سعر البط المسكوفي اليوم, أسعار البط اليوم, سعر البط اليوم, أسعار البط اليوم بالكيلو, سعر البط اليوم بالكيلو, أسعار الدجاج الأبيض اليوم, سعر الدجاج الأبيض اليوم, أسعار الدجاج اليوم, سعر الدجاج اليوم, أسعار الدواجن, سعر الدواجن, أسعار الدواجن البيضاء اليوم, سعر الدواجن البيضاء اليوم, أسعار الدواجن اليوم, سعر الدواجن اليوم, أسعار الدواجن والكتاكيت اليوم, سعر الدواجن والكتاكيت اليوم, أسعار السمان اليوم, سعر السمان اليوم, سعر الفراخ البيضاء, أسعار الفراخ البيضاء, سعر الفراخ الساسو, أسعار الفراخ الساسو, سعر الرومي, أسعار الرومي, سعر الرومي الأبيض, أسعار الرومي الأبيض, سعر الرومي الأسود, أسعار الرومي الأسود, سعر البط المسكوفي, أسعار البط المسكوفي, سعر البط المولر, أسعار البط المولر, سعر البط الفرنساوي, أسعار البط الفرنساوي, سعر السمان, أسعار السمان, سعر كيلو الفراخ, أسعار كيلو الفراخ, سعر الدواجن بالكيلو, أسعار الدواجن بالكيلو, سعر الفراخ اليوم, أسعار الفراخ اليوم</news:keywords>
     </news:news>
   </url>
   
   <!-- صفحة اسعار الكتاكيت -->
   <url>
     <loc>https://dwajn.net/chicks.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <news:news>
@@ -51,16 +51,16 @@
         <news:name>بورصة الدواجن الرئيسية</news:name>
         <news:language>ar</news:language>
       </news:publication>
-      <news:publication_date>2025-12-05</news:publication_date>
-      <news:title>أسعار الكتاكيت اليوم - بورصة الدواجن</news:title>
-      <news:keywords>اسعار الكتاكيت, أسعار الكتاكيت اليوم, سعر كتكوت الوادي, أسعار الدواجن والكتاكيت اليوم, أسعار الكتاكيت البلدي اليوم, أسعار الفراخ الساسو اليوم, أسعار الكتاكيت البيضاء, بورصة الكتاكيت, سعر الكتكوت الأبيض, سعر الكتكوت الساسو, كتاكيت الوادي, كتاكيت الوطنية, كتاكيت الدقهلية, كتاكيت امات, كتاكيت كايرو ثري اي, كتاكيت القاهرة, كتاكيت دلتا مصر, كتاكيت رمضان فكري, كتاكيت الشروق</news:keywords>
+      <news:publication_date>2025-12-06</news:publication_date>
+      <news:title>سعر وأسعار الكتاكيت اليوم - كتاكيت بيضاء وساسو وبلدي - بورصة الدواجن</news:title>
+      <news:keywords>اسعار الكتاكيت, سعر الكتاكيت, أسعار الكتاكيت اليوم, سعر الكتاكيت اليوم, سعر كتكوت الوادي, أسعار كتكوت الوادي, سعر كتكوت الوطنية, أسعار كتكوت الوطنية, سعر كتكوت الدقهلية, أسعار كتكوت الدقهلية, أسعار الدواجن والكتاكيت اليوم, سعر الدواجن والكتاكيت اليوم, أسعار الكتاكيت البلدي اليوم, سعر الكتاكيت البلدي اليوم, أسعار الفراخ الساسو اليوم, سعر الفراخ الساسو اليوم, أسعار الكتاكيت البيضاء, سعر الكتاكيت البيضاء, بورصة الكتاكيت, سعر الكتكوت الأبيض, أسعار الكتكوت الأبيض, سعر الكتكوت الساسو, أسعار الكتكوت الساسو, كتاكيت الوادي, سعر كتاكيت الوادي, كتاكيت الوطنية, سعر كتاكيت الوطنية, كتاكيت الدقهلية, سعر كتاكيت الدقهلية, كتاكيت امات, سعر كتكوت امات, أسعار كتكوت امات, كتاكيت كايرو ثري اي, سعر كتكوت كايرو ثري اي, كتاكيت القاهرة, سعر كتكوت القاهرة, كتاكيت دلتا مصر, سعر كتكوت دلتا مصر, كتاكيت رمضان فكري, سعر كتكوت رمضان فكري, كتاكيت الشروق, سعر كتكوت الشروق, سعر الكتكوت اليوم, أسعار الكتكوت اليوم, سعر كتكوت أبيض أهالي, أسعار كتكوت أبيض أهالي</news:keywords>
     </news:news>
   </url>
   
   <!-- صفحة اسعار البيض -->
   <url>
     <loc>https://dwajn.net/eggs.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <news:news>
@@ -68,16 +68,16 @@
         <news:name>بورصة الدواجن الرئيسية</news:name>
         <news:language>ar</news:language>
       </news:publication>
-      <news:publication_date>2025-12-05</news:publication_date>
-      <news:title>أسعار البيض اليوم - بورصة الدواجن</news:title>
-      <news:keywords>أسعار البيض اليوم, سعر البيض الأبيض, سعر البيض الأحمر, سعر البيض البلدي, بورصة البيض, بورصة البيض الرئيسية</news:keywords>
+      <news:publication_date>2025-12-06</news:publication_date>
+      <news:title>سعر وأسعار البيض اليوم - بيض أبيض وأحمر وبلدي - بورصة البيض الرئيسية</news:title>
+      <news:keywords>أسعار البيض اليوم, سعر البيض اليوم, سعر البيض الأبيض, أسعار البيض الأبيض, سعر البيض الأحمر, أسعار البيض الأحمر, سعر البيض البلدي, أسعار البيض البلدي, بورصة البيض, بورصة البيض الرئيسية, سعر طبق البيض, أسعار طبق البيض, سعر كرتونة البيض, أسعار كرتونة البيض, أسعار البيض الأبيض اليوم, سعر البيض الأبيض اليوم, أسعار البيض الأحمر اليوم, سعر البيض الأحمر اليوم, أسعار البيض البلدي اليوم, سعر البيض البلدي اليوم, سعر البيض, أسعار البيض, سعر طبق البيض الأبيض, سعر طبق البيض الأحمر, سعر طبق البيض البلدي, أسعار طبق البيض الأبيض, أسعار طبق البيض الأحمر, بورصة الدواجن</news:keywords>
     </news:news>
   </url>
   
   <!-- صفحة اسعار العلف -->
   <url>
     <loc>https://dwajn.net/feed.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
     <news:news>
@@ -85,16 +85,16 @@
         <news:name>بورصة الدواجن الرئيسية</news:name>
         <news:language>ar</news:language>
       </news:publication>
-      <news:publication_date>2025-12-05</news:publication_date>
-      <news:title>أسعار العلف اليوم - بورصة الدواجن</news:title>
-      <news:keywords>العلف, أسعار أعلاف الدواجن, شركات العلف, البادي, النامي, الناهي, أسعار العلف اليوم, سعر علف الدواجن, سعر علف التسمين, سعر علف البياض, أسعار الأعلاف, علف الوادي, علف الوطنية, علف الدقهلية, علف امات, علف كايرو ثري اي, علف القاهرة, علف دلتا مصر, علف رمضان فكري, علف الشروق, علف نيوهوب, علف فيدمكس, علف هيدة, علف نوفا
+      <news:publication_date>2025-12-06</news:publication_date>
+      <news:title>سعر وأسعار العلف والأعلاف اليوم - البادي والنامي والناهي - بورصة الدواجن</news:title>
+      <news:keywords>العلف, سعر العلف, أسعار أعلاف الدواجن, سعر أعلاف الدواجن, شركات العلف, البادي, النامي, الناهي, أسعار العلف اليوم, سعر العلف اليوم, أسعار الأعلاف اليوم, سعر الأعلاف اليوم, سعر علف الدواجن, أسعار علف الدواجن, سعر علف التسمين, أسعار علف التسمين, سعر علف البياض, أسعار علف البياض, سعر علف البادي, أسعار علف البادي, سعر علف النامي, أسعار علف النامي, سعر علف الناهي, أسعار علف الناهي, أسعار الأعلاف, سعر الأعلاف, علف دواجن 23%, سعر علف دواجن 23%, علف دواجن 21%, سعر علف دواجن 21%, علف دواجن 19%, سعر علف دواجن 19%, علف الوادي, سعر علف الوادي, أسعار علف الوادي, علف الوطنية, سعر علف الوطنية, علف الدقهلية, سعر علف الدقهلية, علف امات, سعر علف امات, علف كايرو ثري اي, سعر علف كايرو ثري اي, علف القاهرة, سعر علف القاهرة, علف دلتا مصر, سعر علف دلتا مصر, علف رمضان فكري, سعر علف رمضان فكري, علف الشروق, سعر علف الشروق, علف نيوهوب, سعر علف نيوهوب, علف فيدمكس, سعر علف فيدمكس, علف هيدة, سعر علف هيدة, علف نوفا, سعر علف نوفا, الوادي للأعلاف, الوطنية للأعلاف, الدقهلية للأعلاف</news:keywords>
     </news:news>
   </url>
   
   <!-- صفحة اسعار الخامات -->
   <url>
     <loc>https://dwajn.net/materials.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
     <news:news>
@@ -102,51 +102,936 @@
         <news:name>بورصة الدواجن الرئيسية</news:name>
         <news:language>ar</news:language>
       </news:publication>
-      <news:publication_date>2025-12-05</news:publication_date>
-      <news:title>أسعار الخامات الزراعية اليوم - بورصة الدواجن</news:title>
-      <news:keywords>أسعار الذرة الصفراء, أسعار الذرة البيضاء, سعر كسب فول الصويا, سعر نخالة القمح, أسعار الخامات الزراعية</news:keywords>
+      <news:publication_date>2025-12-06</news:publication_date>
+      <news:title>سعر وأسعار الخامات الزراعية اليوم - ذرة صفراء وبيضاء وصويا ونخالة وشعير - بورصة الدواجن</news:title>
+      <news:keywords>أسعار الذرة الصفراء, سعر الذرة الصفراء, أسعار الذرة البيضاء, سعر الذرة البيضاء, سعر كسب فول الصويا, أسعار كسب فول الصويا, سعر نخالة القمح, أسعار نخالة القمح, أسعار الخامات الزراعية, سعر الخامات الزراعية, سعر الذرة اليوم, أسعار الذرة اليوم, سعر الصويا, أسعار الصويا, سعر الشعير, أسعار الشعير, أسعار مركزات البروتين, سعر مركزات البروتين, خامات الأعلاف, سعر خامات الأعلاف, سعر الذرة, أسعار الذرة, سعر الذرة الصفراء اليوم, أسعار الذرة الصفراء اليوم, سعر الذرة البيضاء اليوم, أسعار الذرة البيضاء اليوم, سعر الصويا اليوم, أسعار الصويا اليوم, سعر نخالة القمح اليوم, سعر الشعير اليوم, بورصة الدواجن</news:keywords>
     </news:news>
   </url>
   
+  <!-- صفحات تفاصيل الفراخ والدواجن -->
+  <url>
+    <loc>https://dwajn.net/poultry/white-chicken.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر الفراخ البيضاء اليوم بالكيلو - بورصة الدواجن</news:title>
+      <news:keywords>سعر الفراخ البيضاء, أسعار الفراخ البيضاء اليوم, سعر الفراخ البيضاء اليوم, سعر كيلو الفراخ البيضاء, أسعار الدجاج الأبيض, سعر الدجاج الأبيض اليوم, بورصة الفراخ البيضاء, سعر الفراخ البيضاء اليوم بالكيلو</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/poultry/sasso-chicken.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر الفراخ الساسو اليوم بالكيلو - بورصة الدواجن</news:title>
+      <news:keywords>سعر الفراخ الساسو, أسعار الفراخ الساسو اليوم, سعر الفراخ الساسو اليوم, سعر كيلو الساسو, سعر الدجاج الساسو, بورصة الساسو, سعر الساسو اليوم</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/poultry/baladi-chicken.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر الفراخ البلدي اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر الفراخ البلدي, أسعار الفراخ البلدي اليوم, سعر الدجاج البلدي, سعر الفراخ البلدي اليوم, بورصة الفراخ البلدي</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/poultry/mothers-chicken.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر الأمهات اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر الأمهات, أسعار الأمهات اليوم, سعر دجاج الأمهات, أمهات الدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/poultry/white-turkey.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر الرومي الأبيض اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر الرومي الأبيض, أسعار الرومي الأبيض اليوم, سعر الديك الرومي الأبيض, بورصة الرومي</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/poultry/black-turkey.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر الرومي الأسود اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر الرومي الأسود, أسعار الرومي الأسود اليوم, سعر الديك الرومي الأسود, بورصة الرومي الأسود</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/poultry/muscovy-duck.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر البط المسكوفي اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر البط المسكوفي, أسعار البط المسكوفي اليوم, سعر البط المسكوفي اليوم, بورصة البط المسكوفي</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/poultry/molar-duck.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر البط المولر اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر البط المولر, أسعار البط المولر اليوم, سعر البط المولر اليوم, بورصة البط المولر</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/poultry/french-duck.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر البط الفرنساوي اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر البط الفرنساوي, أسعار البط الفرنساوي اليوم, سعر البط الفرنساوي اليوم, بورصة البط الفرنساوي</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/poultry/quail.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر السمان اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر السمان, أسعار السمان اليوم, سعر السمان اليوم, بورصة السمان, سعر طائر السمان</news:keywords>
+    </news:news>
+  </url>
+
+  <!-- صفحات تفاصيل الكتاكيت -->
+  <url>
+    <loc>https://dwajn.net/chicks-details/wadi-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت الوادي اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت الوادي, أسعار كتكوت الوادي اليوم, كتاكيت الوادي, سعر كتاكيت الوادي, شركة الوادي للكتاكيت</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/watania-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت الوطنية اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت الوطنية, أسعار كتكوت الوطنية اليوم, كتاكيت الوطنية, سعر كتاكيت الوطنية, شركة الوطنية للكتاكيت</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/dakahlia-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت الدقهلية اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت الدقهلية, أسعار كتكوت الدقهلية اليوم, كتاكيت الدقهلية, سعر كتاكيت الدقهلية, شركة الدقهلية للكتاكيت</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/cairo-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت القاهرة اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت القاهرة, أسعار كتكوت القاهرة اليوم, كتاكيت القاهرة, سعر كتاكيت القاهرة</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/cairo3a-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت كايرو ثري اي اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت كايرو ثري اي, أسعار كتكوت كايرو ثري اي اليوم, كتاكيت كايرو ثري اي, سعر كتاكيت كايرو 3A</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/delta-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت دلتا مصر اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت دلتا مصر, أسعار كتكوت دلتا مصر اليوم, كتاكيت دلتا مصر, سعر كتاكيت دلتا</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/amat-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت امات اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت امات, أسعار كتكوت امات اليوم, كتاكيت امات, سعر كتاكيت امات</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/shrouk-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت الشروق اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت الشروق, أسعار كتكوت الشروق اليوم, كتاكيت الشروق, سعر كتاكيت الشروق</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/samy-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت سامي عياد اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت سامي عياد, أسعار كتكوت سامي عياد اليوم, كتاكيت سامي عياد</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/ramadan-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت رمضان فكري اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت رمضان فكري, أسعار كتكوت رمضان فكري اليوم, كتاكيت رمضان فكري</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/tasgeen-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت التسعين اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت التسعين, أسعار كتكوت التسعين اليوم, كتاكيت التسعين, سعر كتاكيت 90</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/abrar-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت الأبرار اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت الأبرار, أسعار كتكوت الأبرار اليوم, كتاكيت الأبرار</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/qasaby-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت القصبي اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت القصبي, أسعار كتكوت القصبي اليوم, كتاكيت القصبي</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/sasso-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت ساسو اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت ساسو, أسعار كتكوت ساسو اليوم, كتاكيت ساسو, سعر كتاكيت الساسو, كتكوت الساسو</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/white-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت أبيض أهالي اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت أبيض أهالي, أسعار كتكوت أبيض أهالي اليوم, كتاكيت بيضاء أهالي, سعر الكتكوت الأبيض</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/chicks-details/newgen-chick.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كتكوت نيوجن اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كتكوت نيوجن, أسعار كتكوت نيوجن اليوم, كتاكيت نيوجن</news:keywords>
+    </news:news>
+  </url>
+
+  <!-- صفحات تفاصيل البيض -->
+  <url>
+    <loc>https://dwajn.net/eggs-details/white-eggs.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر البيض الأبيض اليوم - بورصة البيض</news:title>
+      <news:keywords>سعر البيض الأبيض, أسعار البيض الأبيض اليوم, سعر طبق البيض الأبيض, سعر كرتونة البيض الأبيض, بورصة البيض الأبيض</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/eggs-details/red-eggs.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر البيض الأحمر اليوم - بورصة البيض</news:title>
+      <news:keywords>سعر البيض الأحمر, أسعار البيض الأحمر اليوم, سعر طبق البيض الأحمر, سعر كرتونة البيض الأحمر, بورصة البيض الأحمر</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/eggs-details/baladi-eggs.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر البيض البلدي اليوم - بورصة البيض</news:title>
+      <news:keywords>سعر البيض البلدي, أسعار البيض البلدي اليوم, سعر طبق البيض البلدي, بورصة البيض البلدي</news:keywords>
+    </news:news>
+  </url>
+
+  <!-- صفحات تفاصيل الأعلاف -->
+  <url>
+    <loc>https://dwajn.net/feed-details/cairo-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف القاهرة اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف القاهرة, أسعار علف القاهرة اليوم, علف القاهرة للدواجن, شركة القاهرة للأعلاف</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/dakahlia-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف الدقهلية اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف الدقهلية, أسعار علف الدقهلية اليوم, علف الدقهلية للدواجن, شركة الدقهلية للأعلاف</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/alwatania-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف الوطنية اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف الوطنية, أسعار علف الوطنية اليوم, علف الوطنية للدواجن, شركة الوطنية للأعلاف</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/egypt-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف مصر اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف مصر, أسعار علف مصر اليوم, علف مصر للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/misr-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف مصر للأعلاف اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف مصر للأعلاف, أسعار علف مصر اليوم, شركة مصر للأعلاف</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/newhope-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف نيوهوب اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف نيوهوب, أسعار علف نيوهوب اليوم, علف نيو هوب للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/haida-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف هيدة اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف هيدة, أسعار علف هيدة اليوم, علف هيدة للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/veto-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف فيتو اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف فيتو, أسعار علف فيتو اليوم, علف فيتو للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/teba-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف طيبة اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف طيبة, أسعار علف طيبة اليوم, علف طيبة للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/soha-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف سها اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف سها, أسعار علف سها اليوم, علف سها للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/rashid-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف رشيد اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف رشيد, أسعار علف رشيد اليوم, علف رشيد للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/abostate-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف أبو سته اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف أبو سته, أسعار علف أبو سته اليوم, علف أبو سته للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/alamal-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف الأمل اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف الأمل, أسعار علف الأمل اليوم, علف الأمل للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/feed-details/almogy-feed.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر علف المجي اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر علف المجي, أسعار علف المجي اليوم, علف المجي للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <!-- صفحات تفاصيل الخامات -->
+  <url>
+    <loc>https://dwajn.net/materials-details/corn.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر الذرة الصفراء اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر الذرة الصفراء, أسعار الذرة الصفراء اليوم, سعر الذرة اليوم, سعر طن الذرة الصفراء, بورصة الذرة</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/materials-details/soybean-meal.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كسب فول الصويا اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كسب فول الصويا, أسعار كسب فول الصويا اليوم, سعر كسب الصويا, سعر الصويا اليوم, بورصة الصويا</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/materials-details/soybean.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر فول الصويا اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر فول الصويا, أسعار فول الصويا اليوم, سعر الصويا الكاملة, بورصة فول الصويا</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/materials-details/bran.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر نخالة القمح اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر نخالة القمح, أسعار نخالة القمح اليوم, سعر النخالة, بورصة النخالة</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/materials-details/wheat.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر القمح اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر القمح, أسعار القمح اليوم, سعر طن القمح, بورصة القمح</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/materials-details/sunflower-meal.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.65</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر كسب دوار الشمس اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر كسب دوار الشمس, أسعار كسب دوار الشمس اليوم, سعر كسب عباد الشمس</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/materials-details/rice-bran.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.65</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر رجيع الكون اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر رجيع الكون, أسعار رجيع الكون اليوم, سعر نخالة الأرز, رجيع الأرز</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/materials-details/limestone.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر الحجر الجيري اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر الحجر الجيري, أسعار الحجر الجيري اليوم, سعر الكالسيوم, حجر جيري للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/materials-details/phosphate.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر الفوسفات ثنائي الكالسيوم اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر الفوسفات, أسعار الفوسفات اليوم, سعر الفوسفات ثنائي الكالسيوم, DCP</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/materials-details/salt.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر الملح اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر الملح, أسعار الملح اليوم, سعر ملح الطعام للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/materials-details/methionine.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر الميثيونين اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر الميثيونين, أسعار الميثيونين اليوم, سعر أحماض أمينية, ميثيونين للدواجن</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://dwajn.net/materials-details/premix.html</loc>
+    <lastmod>2025-12-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>بورصة الدواجن الرئيسية</news:name>
+        <news:language>ar</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-07</news:publication_date>
+      <news:title>سعر البريمكس اليوم - بورصة الدواجن</news:title>
+      <news:keywords>سعر البريمكس, أسعار البريمكس اليوم, سعر الفيتامينات والمعادن, بريمكس للدواجن</news:keywords>
+    </news:news>
+  </url>
+
   <!-- صفحات المعلومات -->
   <url>
     <loc>https://dwajn.net/about.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://dwajn.net/contact.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://dwajn.net/data-methodology.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   
   <url>
     <loc>https://dwajn.net/data-quality.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   
   <url>
     <loc>https://dwajn.net/terms.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
     <loc>https://dwajn.net/privacy.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2025-12-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
