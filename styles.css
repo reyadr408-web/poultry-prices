@@ -464,6 +464,22 @@ body:not(.prices-loading) .price-badge {
     transition: opacity 0.3s ease-in-out;
 }
 
+/* Make table rows and cards clickable with proper link support */
+tr[data-href], div[data-href] {
+    position: relative;
+    cursor: pointer;
+}
+
+tr[data-href] .row-link, div[data-href] .card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    text-decoration: none;
+}
+
 /* Poultry Table Specific */
 .poultry-table th:first-child,
 .poultry-table td:first-child {
