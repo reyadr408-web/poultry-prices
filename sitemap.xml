@@ -8,7 +8,7 @@
   
   <!-- الصفحة الرئيسية - بورصة الدواجن الرئيسية -->
   <url>
-    <loc>https://dwajn.net/index.html</loc>
+    <loc>https://dwajn.net/index</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -25,7 +25,7 @@
   
   <!-- صفحة اسعار الفراخ والدواجن والبط والسمان -->
   <url>
-    <loc>https://dwajn.net/poultry.html</loc>
+    <loc>https://dwajn.net/poultry</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
@@ -42,7 +42,7 @@
   
   <!-- صفحة اسعار الكتاكيت -->
   <url>
-    <loc>https://dwajn.net/chicks.html</loc>
+    <loc>https://dwajn.net/chicks</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -59,7 +59,7 @@
   
   <!-- صفحة اسعار البيض -->
   <url>
-    <loc>https://dwajn.net/eggs.html</loc>
+    <loc>https://dwajn.net/eggs</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -76,7 +76,7 @@
   
   <!-- صفحة اسعار العلف -->
   <url>
-    <loc>https://dwajn.net/feed.html</loc>
+    <loc>https://dwajn.net/feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
@@ -93,7 +93,7 @@
   
   <!-- صفحة اسعار الخامات -->
   <url>
-    <loc>https://dwajn.net/materials.html</loc>
+    <loc>https://dwajn.net/materials</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
@@ -110,7 +110,7 @@
   
   <!-- صفحات تفاصيل الفراخ والدواجن -->
   <url>
-    <loc>https://dwajn.net/poultry/white-chicken.html</loc>
+    <loc>https://dwajn.net/poultry/white-chicken</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
@@ -126,7 +126,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/poultry/sasso-chicken.html</loc>
+    <loc>https://dwajn.net/poultry/sasso-chicken</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
@@ -142,7 +142,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/poultry/baladi-chicken.html</loc>
+    <loc>https://dwajn.net/poultry/baladi-chicken</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -158,7 +158,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/poultry/mothers-chicken.html</loc>
+    <loc>https://dwajn.net/poultry/mothers-chicken</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -174,7 +174,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/poultry/white-turkey.html</loc>
+    <loc>https://dwajn.net/poultry/white-turkey</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -190,7 +190,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/poultry/black-turkey.html</loc>
+    <loc>https://dwajn.net/poultry/black-turkey</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -206,7 +206,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/poultry/muscovy-duck.html</loc>
+    <loc>https://dwajn.net/poultry/muscovy-duck</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -222,7 +222,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/poultry/molar-duck.html</loc>
+    <loc>https://dwajn.net/poultry/molar-duck</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -238,7 +238,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/poultry/french-duck.html</loc>
+    <loc>https://dwajn.net/poultry/french-duck</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -254,7 +254,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/poultry/quail.html</loc>
+    <loc>https://dwajn.net/poultry/quail</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -271,7 +271,7 @@
 
   <!-- صفحات تفاصيل الكتاكيت -->
   <url>
-    <loc>https://dwajn.net/chicks-details/wadi-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/wadi-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -287,7 +287,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/watania-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/watania-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -303,7 +303,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/dakahlia-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/dakahlia-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -319,7 +319,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/cairo-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/cairo-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -335,7 +335,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/cairo3a-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/cairo3a-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -351,7 +351,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/delta-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/delta-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -367,7 +367,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/amat-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/amat-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -383,7 +383,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/shrouk-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/shrouk-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -399,7 +399,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/samy-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/samy-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -415,7 +415,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/ramadan-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/ramadan-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -431,7 +431,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/tasgeen-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/tasgeen-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -447,7 +447,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/abrar-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/abrar-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -463,7 +463,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/qasaby-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/qasaby-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -479,7 +479,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/sasso-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/sasso-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -495,7 +495,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/white-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/white-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -511,7 +511,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/chicks-details/newgen-chick.html</loc>
+    <loc>https://dwajn.net/chicks-details/newgen-chick</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -528,7 +528,7 @@
 
   <!-- صفحات تفاصيل البيض -->
   <url>
-    <loc>https://dwajn.net/eggs-details/white-eggs.html</loc>
+    <loc>https://dwajn.net/eggs-details/white-eggs</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -544,7 +544,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/eggs-details/red-eggs.html</loc>
+    <loc>https://dwajn.net/eggs-details/red-eggs</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -560,7 +560,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/eggs-details/baladi-eggs.html</loc>
+    <loc>https://dwajn.net/eggs-details/baladi-eggs</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -577,7 +577,7 @@
 
   <!-- صفحات تفاصيل الأعلاف -->
   <url>
-    <loc>https://dwajn.net/feed-details/cairo-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/cairo-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -593,7 +593,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/dakahlia-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/dakahlia-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -609,7 +609,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/alwatania-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/alwatania-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -625,7 +625,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/egypt-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/egypt-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -641,7 +641,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/misr-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/misr-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -657,7 +657,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/newhope-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/newhope-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -673,7 +673,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/haida-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/haida-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -689,7 +689,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/veto-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/veto-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -705,7 +705,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/teba-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/teba-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -721,7 +721,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/soha-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/soha-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -737,7 +737,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/rashid-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/rashid-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -753,7 +753,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/abostate-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/abostate-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -769,7 +769,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/alamal-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/alamal-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -785,7 +785,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/feed-details/almogy-feed.html</loc>
+    <loc>https://dwajn.net/feed-details/almogy-feed</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -802,7 +802,7 @@
 
   <!-- صفحات تفاصيل الخامات -->
   <url>
-    <loc>https://dwajn.net/materials-details/corn.html</loc>
+    <loc>https://dwajn.net/materials-details/corn</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -818,7 +818,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/materials-details/soybean-meal.html</loc>
+    <loc>https://dwajn.net/materials-details/soybean-meal</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -834,7 +834,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/materials-details/soybean.html</loc>
+    <loc>https://dwajn.net/materials-details/soybean</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -850,7 +850,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/materials-details/bran.html</loc>
+    <loc>https://dwajn.net/materials-details/bran</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -866,7 +866,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/materials-details/wheat.html</loc>
+    <loc>https://dwajn.net/materials-details/wheat</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -882,7 +882,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/materials-details/sunflower-meal.html</loc>
+    <loc>https://dwajn.net/materials-details/sunflower-meal</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.65</priority>
@@ -898,7 +898,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/materials-details/rice-bran.html</loc>
+    <loc>https://dwajn.net/materials-details/rice-bran</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.65</priority>
@@ -914,7 +914,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/materials-details/limestone.html</loc>
+    <loc>https://dwajn.net/materials-details/limestone</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -930,7 +930,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/materials-details/phosphate.html</loc>
+    <loc>https://dwajn.net/materials-details/phosphate</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -946,7 +946,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/materials-details/salt.html</loc>
+    <loc>https://dwajn.net/materials-details/salt</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -962,7 +962,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/materials-details/methionine.html</loc>
+    <loc>https://dwajn.net/materials-details/methionine</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -978,7 +978,7 @@
   </url>
 
   <url>
-    <loc>https://dwajn.net/materials-details/premix.html</loc>
+    <loc>https://dwajn.net/materials-details/premix</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -995,42 +995,42 @@
 
   <!-- صفحات المعلومات -->
   <url>
-    <loc>https://dwajn.net/about.html</loc>
+    <loc>https://dwajn.net/about</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://dwajn.net/contact.html</loc>
+    <loc>https://dwajn.net/contact</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://dwajn.net/data-methodology.html</loc>
+    <loc>https://dwajn.net/data-methodology</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   
   <url>
-    <loc>https://dwajn.net/data-quality.html</loc>
+    <loc>https://dwajn.net/data-quality</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   
   <url>
-    <loc>https://dwajn.net/terms.html</loc>
+    <loc>https://dwajn.net/terms</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://dwajn.net/privacy.html</loc>
+    <loc>https://dwajn.net/privacy</loc>
     <lastmod>2025-12-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
